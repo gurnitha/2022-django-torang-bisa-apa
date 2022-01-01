@@ -123,5 +123,16 @@ Oleh: I Nyoman Gurnitha
         1. Menginstal django-environ
         2. Membuat .env file
         3. Mensetup variabel pada .env file
-        
+
         modified:   README.md
+
+
+#### 05.3 Mensetup environment pada settings.py file
+
+        Steps:
+
+        1. Menginisiasi environment pada settings.py
+        2. Memodifikasi SECRET_KEY
+
+        modified:   README.md
+        modified:   config/settings.py
