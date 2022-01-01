@@ -74,3 +74,27 @@ Oleh: I Nyoman Gurnitha
         new file:   config/urls.py
         new file:   config/wsgi.py
         new file:   manage.py
+
+
+
+### 04. MEMBUAT DJANGO APP
+--------------------------
+
+#### 04.1 Membuat django app dengan nama 'projects'
+
+        Steps:
+
+        1. Membuat django app 'projecs'
+        2. Memeriksa hasilnya
+        3. Meregistrasi projects pada config/settings.py
+        4. Jalankan server untuk menguji hasilnya
+
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   projects/__init__.py
+        new file:   projects/admin.py
+        new file:   projects/apps.py
+        new file:   projects/migrations/__init__.py
+        new file:   projects/models.py
+        new file:   projects/tests.py
+        new file:   projects/views.py
