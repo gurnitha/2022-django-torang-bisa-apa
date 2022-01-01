@@ -51,3 +51,26 @@ Oleh: I Nyoman Gurnitha
         1. Lihat gambar 02/01
 
         modified:   README.md
+
+
+
+### 03. MEMBUAT DJANGO PROYEK
+-----------------------------
+
+#### 03.1 Membuat django proyek 'config'
+
+        Steps:
+
+        1. Memastikan venv39327 dalam keadaan aktif
+        2. Membuat djangp proyek
+        3. Memerikas hasilnya
+        4. Jalankan server 
+        5. Buka browser untuk melihat hasilnya
+
+        modified:   README.md
+        new file:   config/__init__.py
+        new file:   config/asgi.py
+        new file:   config/settings.py
+        new file:   config/urls.py
+        new file:   config/wsgi.py
+        new file:   manage.py
