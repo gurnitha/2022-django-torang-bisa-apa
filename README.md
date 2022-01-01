@@ -112,5 +112,16 @@ Oleh: I Nyoman Gurnitha
         2. Membuat database
         3. Memeriksa hasilnya
         4. Menginstal postgres driver psycopg2-binary==2.8.6
+
+        modified:   README.md
+
+
+#### 05.2 Mensetup django-environ
+
+        Steps:
+
+        1. Menginstal django-environ
+        2. Membuat .env file
+        3. Mensetup variabel pada .env file
         
         modified:   README.md
