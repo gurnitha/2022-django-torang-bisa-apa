@@ -98,3 +98,19 @@ Oleh: I Nyoman Gurnitha
         new file:   projects/models.py
         new file:   projects/tests.py
         new file:   projects/views.py
+
+
+
+### 05. SETTING UP DATABASE
+---------------------------
+
+#### 05.1 Membuat postgresql database
+
+        Steps:
+
+        1. Login ke postgres server
+        2. Membuat database
+        3. Memeriksa hasilnya
+        4. Menginstal postgres driver psycopg2-binary==2.8.6
+        
+        modified:   README.md
