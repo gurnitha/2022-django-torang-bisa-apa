@@ -8,6 +8,7 @@ Oleh: I Nyoman Gurnitha
 
 
 ### 01. INISIAL SETUP
+----------------------
 
         Steps:
 
@@ -37,3 +38,16 @@ Oleh: I Nyoman Gurnitha
 
         new file:   .gitignore
         new file:   README.md
+
+
+
+### 02. MENGINSTAL DJANGO
+-------------------------
+
+#### 02.1 Menginstal Django Framework
+
+        Steps:
+
+        1. Lihat gambar 02/01
+
+        modified:   README.md
