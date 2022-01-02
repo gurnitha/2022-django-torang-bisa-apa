@@ -150,4 +150,18 @@ Oleh: I Nyoman Gurnitha
 
 
 
+### 06. DJANGO ADMIN
+--------------------
+
+#### 06.1 Mengaktifkan Django Admin
+
+        Steps:
+
+        1. Membuat migrasi 
+        2. Menjalankan migrasi
+        3. Jalankan server
+        4. Memeriksa hasilnya
+
+        modified:   README.md
+
 
