@@ -176,3 +176,36 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   config/settings.py
+
+
+
+### 07. DJANGO MODEL
+--------------------
+
+#### 07.1 Membuat model dengan nama Project
+
+        Steps:
+
+        1. Buka file: projects/model.py dan buat model Project
+        2. Membuat migrasi 
+        3. Memeriksa hasil perintah migrasi
+        4. Menjalankan migrasi
+        5. Memeriksa hasil perintah migrasi
+        
+        BEGIN;
+        --
+        -- Create model Project
+        --
+        CREATE TABLE `projects_project` (
+                `title` varchar(200) NOT NULL, 
+                `description` longtext NULL, 
+                `demo_link` varchar(2000) NULL, 
+                `source_link` varchar(2000) NULL, 
+                `created` datetime(6) NOT NULL, 
+                `id` char(32) NOT NULL PRIMARY KEY
+        );
+        COMMIT; 
+
+        modified:   README.md
+        new file:   projects/migrations/0001_initial.py
+        modified:   projects/models.py                                                                                              
