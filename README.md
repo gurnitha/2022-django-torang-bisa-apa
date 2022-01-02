@@ -208,4 +208,16 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         new file:   projects/migrations/0001_initial.py
-        modified:   projects/models.py                                                                                              
+        modified:   projects/models.py
+
+
+#### 07.2 Meregistrasi model Project pada admin.py
+
+        Steps:
+
+        1. Buka file: projects/admin.py impor dan daftarkan model Project
+        2. Jalankan server untuk memeriksa hasilnya
+        3. Buka Admin Panel untuk memeriksa hasilnya
+
+        modified:   README.md
+        modified:   projects/admin.py                                                                                              
