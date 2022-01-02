@@ -136,3 +136,18 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   config/settings.py
+
+
+#### 05.4 Mensetup database pada settings.py
+
+        Steps:
+
+        1. Mensetup database kredensial
+        2. Jalankan server untuk menguji hasilnya
+
+        modified:   README.md
+        modified:   config/settings.py
+
+
+
+
