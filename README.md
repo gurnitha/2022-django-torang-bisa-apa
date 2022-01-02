@@ -220,4 +220,15 @@ Oleh: I Nyoman Gurnitha
         3. Buka Admin Panel untuk memeriksa hasilnya
 
         modified:   README.md
-        modified:   projects/admin.py                                                                                              
+        modified:   projects/admin.py  
+
+
+#### 07.3 Menampilkan nama proyek pada Admin Panel
+
+        Steps:
+
+        1. Update model Project
+        2. Refresh browser dan lihat hasilnya
+
+        modified:   README.md
+        modified:   projects/models.py  
