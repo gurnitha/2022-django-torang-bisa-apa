@@ -165,3 +165,14 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
 
 
+#### 06.2 Membuat superuser
+
+        Steps:
+
+        1. Membuat superuser 
+        2. Jalankan server
+        3. Login sebagai superuser
+        4. Sekilas tampilan Admin Panel
+
+        modified:   README.md
+        modified:   config/settings.py
