@@ -305,3 +305,33 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         new file:   projects/migrations/0005_auto_20220103_1018.py
         modified:   projects/models.py
+
+
+
+### 08. MEMBUAT STATIC PAGES
+----------------------------
+
+#### 08.1 Membuat halaman daftar proyek
+
+        Steps:
+
+        0. Mingimpor os 
+        1. Mengaktifkan django templates
+        2. Membuat folder: ./templates/projects
+        3. Membuat file: projects/templates/projects/projects.html
+        4. Menambahkan html template pada projects.html
+        -----
+        5. Membuat method projects_view
+        -----
+        6. Membuat urls: projects/urls.py
+        7. Register rojects/urls.py pada config/urls.py
+        -----
+        8. Jalankan server
+        9. Lihat hasilnya pada browser
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   projects/templates/projects/projects.html
+        new file:   projects/urls.py
+        modified:   projects/views.py
