@@ -425,3 +425,20 @@ Oleh: I Nyoman Gurnitha
         modified:   templates/base.html
         new file:   templates/shared/footer.html
         new file:   templates/shared/navbar.html
+
+
+
+### 10. RENDERING DATA STATIC
+-----------------------------
+
+#### 10.1 Rendering message dari projects_view ke home page
+
+        Steps:
+
+        1. Membuat dami data
+        2. Rendering dami data pada home page
+        3. Memeriksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
