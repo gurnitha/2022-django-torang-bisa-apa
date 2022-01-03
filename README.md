@@ -270,3 +270,21 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/admin.py
         new file:   projects/migrations/0003_tag.py
         modified:   projects/models.py
+
+
+#### 07.5 Membuat hubungan OneToMany antara model Project and Review
+
+        Steps:
+
+        1. Menambahkan kolom project pada model Review
+        2. Membuat migrasi
+        3. Menambahkan 'id' project pada tabel Review
+        4. Menjalankan migrasi
+        5. Menjalankan sqlmigrate
+        6. Jalankan server untuk menguji hasilnya
+        7. Melihat tabel review pada admin panel 
+
+
+        modified:   README.md
+        new file:   projects/migrations/0004_review_project.py
+        modified:   projects/models.py

@@ -41,12 +41,28 @@ class Project(models.Model):
 
 # MODELS:Review
 class Review(models.Model):
-    
+
     VOTE_TYPE = (
         ('up', 'Up Vote'),
         ('down', 'Down Vote'),
     )
 
+    '''
+    Menambahkan field 'project' pada model Review,
+    seperti terlihat di bahwa ini, dimaksudkan untuk
+    membuat hubungan OneToMany antara model Project dan Review.
+
+    Hal itu berarti bahwa sebuah proyek dapat memiliki
+    0 atau 1 atau banyak reeview. Dengan kata lain 
+    setiap Review ditujukan hanya untuk sebuah Proyek. 
+
+    Jadi sebuah proyek ada kemungkinan memiliki 
+    banyak Review, sebuah review atau tidak sama 
+    sekali memiliki review.
+    '''
+    project = models.ForeignKey(
+        Project, 
+        on_delete=models.CASCADE)
     body = models.TextField(
         null=True, 
         blank=True)
