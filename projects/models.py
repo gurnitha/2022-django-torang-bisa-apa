@@ -14,16 +14,56 @@ class Project(models.Model):
     '''NOTE:
 	   Project adalah nama tabel di dalam database
 	   yang berisi kolom-kolom: title, description
-	   demo_link, source_link, created dan id.
+	   featured_image, demo_link, source_link, 
+       tags, vote_total, vote_ratio, created dan id.
     '''
     title = models.CharField(
-                max_length=200)
+        max_length=200)
     description = models.TextField(
-                null=True, blank=True)
+        null=True, 
+        blank=True)
+    featured_image = models.ImageField(
+        null=True, 
+        blank=True, 
+        default="default.jpg")
     demo_link = models.CharField(
-                max_length=2000, null=True, blank=True)
+        max_length=2000, 
+        null=True, 
+        blank=True)
     source_link = models.CharField(
-                max_length=2000, null=True, blank=True)
+        max_length=2000, 
+        null=True, 
+        blank=True)
+    '''
+    Menambahkan field 'tags = models.ManyToManyField' 
+    pada model Project,
+    seperti terlihat di bahwa ini, dimaksudkan untuk
+    membuat hubungan ManyToMany antara model Project dan Tag.
+
+    Hal itu berarti bahwa: 
+
+    1. Sebuah proyek dapat memiliki
+       0 atau 1 atau banyak tags. 
+    2. Dengan kata lain, sebuah tag dapat
+       diperuntukan untuk sebuah atau lebih
+       dari satu proyek. 
+
+    Jadi sebuah proyek ada kemungkinan memiliki 
+    banyak tags, sebuah tag atau tidak sama 
+    sekali memiliki tag.
+    '''
+    tags = models.ManyToManyField(
+        'Tag', # To put '' is not a must, but
+               # it means Tag is resides bellow
+        blank=True)
+    vote_total = models.IntegerField(
+        default=0, 
+        null=True, 
+        blank=True)
+    vote_ratio = models.IntegerField(
+        default=0, 
+        null=True, 
+        blank=True)
     created = models.DateTimeField(
                 auto_now_add=True)
     ''' Menggunakan uuid berarti:

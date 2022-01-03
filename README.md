@@ -288,3 +288,20 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         new file:   projects/migrations/0004_review_project.py
         modified:   projects/models.py
+
+
+#### 07.6 Membuat hubungan ManyToMany antara model Project and Tags
+
+        Steps:
+
+        1. Menambahkan beberapa kolom dan kolom tags pada model Project
+        2. Membuat migrasi
+        3. Menjalankan migrasi
+        4. Menjalankan sqlmigrate
+        5. Jalankan server untuk menguji hasilnya
+        6. Melihat tabel review pada admin panel 
+
+
+        modified:   README.md
+        new file:   projects/migrations/0005_auto_20220103_1018.py
+        modified:   projects/models.py
