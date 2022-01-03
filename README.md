@@ -232,3 +232,23 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   projects/models.py  
+
+
+#### 07.4 Membuat model dengan nama Review
+
+        Steps:
+
+        1. Buka file: projects/model.py dan buat model Review
+        2. Membuat migrasi 
+        3. Memeriksa hasil perintah migrasi
+        4. Menjalankan migrasi
+        5. Memeriksa hasil perintah migrasi pada database
+        6. Memeriksa sqlmigrate
+        7. Register model Review pada projects/admin.py
+        8. Jalankan server
+        9. Memeriksa hasilnya pada admin panel
+
+        modified:   README.md
+        modified:   projects/admin.py
+        new file:   projects/migrations/0002_review.py
+        modified:   projects/models.py
