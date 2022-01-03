@@ -12,14 +12,25 @@
 		padding: 60px;
 		background-color: #D8E8D6;
 		">
+		
+		<!-- Navbar -->
 		<nav>
 			<ul>
 				<li><a href="{% url 'projects:projects' %}">Projects</a></li>
 				<li><a href="{% url 'projects:project_single' %}">Project Single</a></li>
 			</ul>
 		</nav>
+		<hr>
+
+		<!-- Content -->
 		{% block content %}
 		{% endblock content %}
+
+		<!-- Footer -->
+		<div>
+			<hr>
+			<p>Footer</p>
+		</div>
 	</div>
 </body>
 </html>

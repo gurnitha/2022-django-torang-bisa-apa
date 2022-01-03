@@ -386,3 +386,23 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         new file:   templates/base.html
+
+
+#### 09.2 Menggabungkan base template dengan projects dan project_single
+
+        Steps:
+
+        1. Modifikasi base.html 
+        2. Extends base template pada projects page
+        3. Modifikasi projects page
+        ----
+        4. Extends base template pada project_single page
+        5. Modifikasi project_single page
+        ----
+        6. Buka browser untuk melihat hasilnya
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   projects/templates/projects/project_single.html
+        modified:   projects/templates/projects/projects.html
+        modified:   templates/base.html
