@@ -7,3 +7,7 @@ from django.shortcuts import render
 
 def projects_view(request):
 	return render(request, 'projects/projects.html')
+
+
+def project_single_view(request):
+	return render(request, 'projects/project_single.html')

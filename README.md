@@ -335,3 +335,25 @@ Oleh: I Nyoman Gurnitha
         new file:   projects/templates/projects/projects.html
         new file:   projects/urls.py
         modified:   projects/views.py
+
+
+#### 08.2 Membuat halaman singel proyek
+
+        Steps:
+
+        1. Membuat file baru: projects/templates/projects/project_single.html
+        2. Menambahkan html template pada project_single.html
+        -----
+        3. Membuat method project_single_view
+        -----
+        4. Membuat path untuk project_single
+        -----
+        5. Jalankan server
+        6. Lihat hasilnya pada browser
+
+        modified:   README.md
+        new file:   projects/templates/projects/project_single.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+
+        
