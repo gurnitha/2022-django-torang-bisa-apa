@@ -355,7 +355,7 @@ Oleh: I Nyoman Gurnitha
         new file:   projects/templates/projects/project_single.html
         modified:   projects/urls.py
         modified:   projects/views.py
-        
+
 
 #### 08.3 Membuat Navigasi
 
@@ -370,3 +370,19 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         new file:   projects/templates/projects/project_single.html
         modified:   projects/templates/projects/projects.html
+
+
+
+### 09. BASE TEMPLATE DAN TEMPLATE INHERITANCE
+----------------------------------------------
+
+#### 09.1 Membuat base template
+
+        Steps:
+
+        1. Membuat folder: ./templates
+        2. Membuat file: ./templates/base.html
+        3. Membuat base templae
+
+        modified:   README.md
+        new file:   templates/base.html
