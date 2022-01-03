@@ -45,21 +45,14 @@ def projects_view(request):
 
 def project_single_view(request, pk):
 
-    projectObject = None
+    projectObject = Project.objects.get(id=pk)
 
-    for i in projectsList:
-        if i['id'] == pk:
-            projectObject = i 
-
-    context = {'project':projectObject}
+    tags = projectObject.tags.all()
+    context = {
+        'project':projectObject,
+        'tags':tags,
+    } 
 
     return render(request, 'projects/project_single.html', context)
 
-def project(request, pk):
-    projctObj = None
-    for i in projectsList:
-        if i['id'] == pk: 
-            projctObj = i
-    # context = 
 
-    return render(request, 'projects/single-project.html', {'project':projctObj})

@@ -5,14 +5,19 @@
 
 {% block content %}
 	<div>
-		<p>Project id: {{project.id}}</p>
-		<h1>Project title:{{project.title}}</h1>
-		<p><span style="color:#2B7C42;">Deskripsi</span>:{{project.description}}</p>
+		<p><span style="color:red;">Project id</span>: {{project.id}}</p>
+		<h1><span style="color:red;">Project title</span>:{{project.title}}</h1>
+		<p><span style="color:red;">Deskripsi</span>:{{project.description}}</p>
 		<ul>
 			<li><a href="https://www.google.com">Demo Link</a></li>
 			<li><a href="https://www.facebook.com">Source Link</a></li>
 		</ul>
-		<h6>Tags: {{project.tags}}</h6>
+		<span style="color:red;">Tag:</span>
+		{% for tag in project.tags.all %}
+			<span style="border:1px solid grey; margin-right: 4px; 
+			width: 100px;" >{{tag}} </span> </a>
+		{% endfor %}
+		<br><br>
 		<a href="{% url 'projects:projects' %}">Back home &larr;</a>
 	</div>
 {% endblock content %}

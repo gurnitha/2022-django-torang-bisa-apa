@@ -490,3 +490,17 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/urls.py
         modified:   projects/views.py
         modified:   templates/shared/navbar.html
+
+
+### 11.2 Menampilkan proyek single
+
+        Steps:
+
+        1. Modifikasi project_single_view
+        2. Modifikasi project_single template
+        3. Periksa hasilnya
+
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_single.html
+        modified:   projects/views.py
