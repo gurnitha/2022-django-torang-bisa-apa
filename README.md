@@ -252,3 +252,21 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/admin.py
         new file:   projects/migrations/0002_review.py
         modified:   projects/models.py
+
+
+#### 07.4 Membuat model dengan nama Tag
+
+        Steps:
+
+        1. Buka file: projects/model.py dan buat model Tag
+        2. Membuat migrasi 
+        3. Menjalankan migrasi
+        4. Menjalankan sqlmigrate
+        5. Register model Tag pada projects/admin.py
+        6. Jalankan server
+        7. Memeriksa hasilnya pada admin panel
+
+        modified:   README.md
+        modified:   projects/admin.py
+        new file:   projects/migrations/0003_tag.py
+        modified:   projects/models.py
