@@ -406,3 +406,22 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/templates/projects/project_single.html
         modified:   projects/templates/projects/projects.html
         modified:   templates/base.html
+
+
+#### 09.3 Menggunakan teknik template inheritance
+
+        Steps:
+
+        1. Membuat shared folder: templates/shared
+        2. Membuat file: templates/shared/navbar.html
+        3. Membuat file: templates/shared/footer.html
+        4. Memindahkan navbar codes ke file shared/navbar.html
+        5. Memindahkan footer codes ke file shared/footer.html
+        6. Include shared/navbar.html pada base.html
+        7. Include shared/footer.html pada base.html
+        8. Buka browser untuk melihat hasilnya
+
+        modified:   README.md
+        modified:   templates/base.html
+        new file:   templates/shared/footer.html
+        new file:   templates/shared/navbar.html

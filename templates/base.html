@@ -14,23 +14,14 @@
 		">
 		
 		<!-- Navbar -->
-		<nav>
-			<ul>
-				<li><a href="{% url 'projects:projects' %}">Projects</a></li>
-				<li><a href="{% url 'projects:project_single' %}">Project Single</a></li>
-			</ul>
-		</nav>
-		<hr>
+		{% include 'shared/navbar.html' %}
 
 		<!-- Content -->
 		{% block content %}
 		{% endblock content %}
 
 		<!-- Footer -->
-		<div>
-			<hr>
-			<p>Footer</p>
-		</div>
+		{% include 'shared/footer.html' %}
 	</div>
 </body>
 </html>
