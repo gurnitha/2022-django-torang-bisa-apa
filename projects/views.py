@@ -6,8 +6,13 @@ from django.shortcuts import render
 # Create your views here.
 
 def projects_view(request):
-	message = 'Hai semuanya, apa kabar?'
-	context = {'msg':message}
+
+	page_title = 'Projects'
+	context = {
+		'title':page_title,
+		'projects':projectsList
+	}
+
 	return render(request, 'projects/projects.html', context)
 
 

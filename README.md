@@ -442,3 +442,17 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
+
+
+#### 10.2 Menggunakan logic rendering data ke templates
+
+        Steps:
+
+        1. Membuat variable pada projects_view
+        2. Rendering data pada template
+        3. Memerisa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
+        modified:   templates/base.html
