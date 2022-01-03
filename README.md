@@ -456,3 +456,17 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
         modified:   templates/base.html
+
+
+#### 10.3 Rendering data statik ke templates
+
+        Steps:
+
+        1. Membuat dami data
+        2. Load data ke projects_view
+        3. Rendering data pada template menggunakan for loop
+        4. Periksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
