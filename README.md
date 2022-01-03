@@ -470,3 +470,23 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   projects/views.py
+
+
+
+### 11. RENDERING DATA DINAMIS DARI DATABASE
+--------------------------------------------
+
+### 11.1 Menampilkan daftar proyeks
+
+        Steps:
+
+        1. Modifikasi project_view
+        2. Rendering data
+        3. Periksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_single.html
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+        modified:   templates/shared/navbar.html
