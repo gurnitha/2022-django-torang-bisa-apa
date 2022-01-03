@@ -355,5 +355,18 @@ Oleh: I Nyoman Gurnitha
         new file:   projects/templates/projects/project_single.html
         modified:   projects/urls.py
         modified:   projects/views.py
-
         
+
+#### 08.3 Membuat Navigasi
+
+        Steps:
+
+        1. Membuat navbar pada projects.html
+        2. Membuat link pada projects.html
+        3. Membuat navbar pada project_single.html
+        4. Membuat link pada project_single.html
+        5. Buka browser untuk melihat hasilnya
+
+        modified:   README.md
+        new file:   projects/templates/projects/project_single.html
+        modified:   projects/templates/projects/projects.html
