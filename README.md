@@ -587,3 +587,19 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   projects/templates/projects/project_form.html
+
+
+### 12.7 CREATE PROJECT Part 1 - Form testing
+
+        Steps:
+
+        1. Ubah project_form.html 
+        2. Menentukan fields yang akan ditampilkan
+        3. Load ProjectForm 
+        4. Testing - isi dan submit form
+        5. Periksa hasilnya pada terminal
+
+        modified:   README.md
+        modified:   projects/forms.py
+        modified:   projects/templates/projects/project_form.html
+        modified:   projects/views.py

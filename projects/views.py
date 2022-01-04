@@ -37,11 +37,21 @@ def project_single_view(request, pk):
 
 def project_create_view(request):
     
+    # Load ProjectForm class
     form = ProjectForm()
 
+    # Jika ada POST request, proses formnya
+    if request.method == "POST":
+
+        # Tesing the form: isi form lalu submit
+        print(request.POST) # tested :)
+
+    # Context dictionary
     context = {
-        'form':form
+        'form':form,
     } 
 
+    # Template
     return render(request, 'projects/project_form.html', context)
+
 
