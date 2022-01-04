@@ -654,3 +654,25 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/templates/projects/projects.html
         modified:   projects/urls.py
         modified:   projects/views.py
+
+
+
+### 13. STATIC DAN MEDIA FILES
+------------------------------
+
+
+#### 13.1 Setting up static dan media files pada settings.py dan urls.py
+
+        Steps:
+
+        1. Setup static dan media files
+        2. Tambahkan path untuk static dan media files pada urls
+        3. Jalankan server untuk menguji
+
+        modified:   devsearch/settings.py
+        modified:   devsearch/urls.py
+        new file:   static/images/codesniper.png
+        ...
+        new file:   static/images/default.jpg
+        new file:   static/images/django-react-course.jpg
+        new file:   static/images/icon.svg
