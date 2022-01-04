@@ -576,3 +576,14 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   projects/templates/projects/project_form.html
+
+
+### 12.6 CREATE Part 5 - Looping Django form
+
+        Steps:
+
+        1. Loop form pada project_form
+        2. Memeriksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_form.html
