@@ -16,4 +16,5 @@ urlpatterns = [
 
     # CRUD
     path('create-project/', views.project_create_view, name='create_project'),
+    path('update-project/<str:pk>/', views.project_update_view, name='update_project'),
 ]

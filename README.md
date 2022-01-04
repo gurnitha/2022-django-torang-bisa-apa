@@ -621,3 +621,19 @@ Oleh: I Nyoman Gurnitha
 #### 12.9 House keeping - Modifikasi README.md file
 
         modified:   README.md
+
+
+### 12.10 UPDATE PROJECT - Update proyek
+
+        Steps:
+
+        1. Membuat mothod project_update_view
+        2. Membuat path
+        3. Membuat link
+        4. Menguji dengan meng-update proyek yg sudah ada
+        5. Memeriksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/urls.py
+        modified:   projects/views.py

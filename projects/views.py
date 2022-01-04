@@ -63,3 +63,36 @@ def project_create_view(request):
     return render(request, 'projects/project_form.html', context) # 5. Render context
 
 
+
+def project_update_view(request, pk):
+
+    # 1. Get the project instance by its id
+    project = Project.objects.get(id=pk)
+
+    ''' 
+    2. Instantiate the ProjectForm class
+       with parameter the instance of the project.
+    '''
+    form = ProjectForm(instance=project)
+
+    # 3. If there is POST request, process the form
+    if request.method == "POST":
+
+        # Tesing the form: fillin the form and submit it
+        # print(request.POST) # tested :)
+
+        # 4. Instantiate the ProjectForm class
+        form = ProjectForm(request.POST, instance=project)
+        
+        # 5. Save input jika form input valid
+        if form.is_valid():
+            form.save()
+            return redirect('projects:projects')
+
+    # 6. Context dictionary
+    context = {
+        'form':form,
+    } 
+
+    # Template
+    return render(request, 'projects/project_form.html', context) # 7. Render context
