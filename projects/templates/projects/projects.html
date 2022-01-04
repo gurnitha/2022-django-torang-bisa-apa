@@ -27,6 +27,7 @@
 			<td>{{project.created}}</td>
 			<td><a href="{% url 'projects:project_single' project.id %}">View</a></td>
 			<td><a href="{% url 'projects:update_project' project.id %}">Edit</a>
+			<td><a href="{% url 'projects:delete_project' project.id %}">Delete</a>
 		</tr>
 		{% endfor %}
 	</table>

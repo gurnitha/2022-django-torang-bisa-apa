@@ -1,0 +1,21 @@
+<!-- projects/templates/projects/project_delete.html -->
+{% extends 'base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock title %}
+
+	{% block content %}
+
+	<form action="" method="POST">
+		{% csrf_token %}
+		
+		<p style="color:red;">Are you sure you want to delete "{{object}}"?</p>
+		
+		<a href="{% url 'projects:projects' %}">
+			Go back &larr;
+		</a>
+		<input type="submit" name="Confirm" />	
+	</form>
+
+	{% endblock content %}

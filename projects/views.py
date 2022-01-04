@@ -96,3 +96,26 @@ def project_update_view(request, pk):
 
     # Template
     return render(request, 'projects/project_form.html', context) # 7. Render context
+
+
+
+
+def project_delete_view(request, pk):
+
+    # 1. Get the project instance by its id
+    project = Project.objects.get(id=pk)
+
+    '''
+    2. Jika ada request dgn method POST
+       gunakan method delete() untuk
+       men-delete proyek berdasarkan 
+       instan yang diterima lalu arahkan
+       kembali ke halaman proyek.
+    '''
+    if request.method == "POST":
+        project.delete()
+        return redirect('projects:projects')
+
+    context = {'object':project}
+    
+    return render(request, 'projects/project_delete.html', context)

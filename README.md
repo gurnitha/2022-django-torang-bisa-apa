@@ -637,3 +637,20 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/templates/projects/projects.html
         modified:   projects/urls.py
         modified:   projects/views.py
+
+
+### 12.11 DELETE PROJECT - Menghapus proyek
+
+        Steps:
+
+        1. Membuat file templates/projects/project_delete.html 
+        2. Membuat template project_delete.html
+        3. Membuat method project_delete_view
+        4. Membuat path
+        5. Membuat link
+        6. Menguji hasilnya
+
+        new file:   projects/templates/projects/project_delete.html
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
