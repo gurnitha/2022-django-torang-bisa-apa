@@ -522,7 +522,7 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/templates/projects/projects.html
 
 
-### 12.2 CREATE Part 1 - Membuat form Template, View, Urls
+### 12.2 CREATE (project_form) Part 1 - Membuat form Template, View, Urls
 
         Steps:
 
@@ -540,7 +540,7 @@ Oleh: I Nyoman Gurnitha
         modified:   templates/shared/navbar.html
 
 
-### 12.3 CREATE Part 2 - Membuat Django Form
+### 12.3 CREATE (project_form) Part 2 - Membuat Django Form
 
         Steps:
 
@@ -553,7 +553,7 @@ Oleh: I Nyoman Gurnitha
         new file:   projects/forms.py
 
 
-### 12.4 CREATE Part 3 - Rendering Django form pada project_form page
+### 12.4 CREATE (project_form) Part 3 - Rendering Django form pada project_form page
 
         Steps:
 
@@ -567,7 +567,7 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/views.py
 
 
-### 12.5 CREATE Part 4 - Rendering Django form with title, label etc
+### 12.5 CREATE (project_form) Part 4 - Rendering Django form with title, label etc
 
         Steps:
 
@@ -578,7 +578,7 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/templates/projects/project_form.html
 
 
-### 12.6 CREATE Part 5 - Looping Django form
+### 12.6 CREATE (project_form) Part 5 - Looping Django form
 
         Steps:
 
@@ -616,3 +616,8 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   projects/views.py
+
+
+#### 12.9 House keeping - Modifikasi README.md file
+
+        modified:   README.md
