@@ -538,3 +538,16 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/urls.py
         modified:   projects/views.py
         modified:   templates/shared/navbar.html
+
+
+### 12.3 CREATE Part 2 - Membuat Django Form
+
+        Steps:
+
+        1. Membuat file baru
+        2. Mengimport django modules ModelForm
+        3. Mengimport model Project
+        4. Membuat class ProjectForm
+
+        modified:   README.md
+        new file:   projects/forms.py
