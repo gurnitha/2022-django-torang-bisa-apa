@@ -603,3 +603,16 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/forms.py
         modified:   projects/templates/projects/project_form.html
         modified:   projects/views.py
+
+
+### 12.8 CREATE PROJECT Part 2 - Create project
+
+        Steps:
+
+        1. Melengkapi logic pada method project_create_view
+        2. Menguji form dengan mengisi form + submit
+        3. Memeriksa hasilnya
+
+
+        modified:   README.md
+        modified:   projects/views.py
