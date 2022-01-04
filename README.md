@@ -687,3 +687,14 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   devsearch/settings.py
+
+
+#### 14.2 Setup django whitenoice
+
+        Steps:
+
+        1. Install whitenoise
+        2. Setup whitenoise in settings.py
+        
+        modified:   README.md
+        modified:   devsearch/settings.py
