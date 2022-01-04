@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 # locals
 from .models import Project
+from .forms import ProjectForm
 
 # Create your views here.
 
@@ -36,7 +37,11 @@ def project_single_view(request, pk):
 
 def project_create_view(request):
     
+    form = ProjectForm()
+
     context = {
+        'form':form
     } 
+
     return render(request, 'projects/project_form.html', context)
 

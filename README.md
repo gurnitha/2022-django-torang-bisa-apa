@@ -551,3 +551,17 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         new file:   projects/forms.py
+
+
+### 12.4 CREATE Part 3 - Rendering Django form pada project_form page
+
+        Steps:
+
+        1. Import ProjectForm
+        2. Load ProjectForm 
+        3. Render context form pada project_form template
+        4. Memeriksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_form.html
+        modified:   projects/views.py
