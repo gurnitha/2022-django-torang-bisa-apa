@@ -520,3 +520,21 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   projects/templates/projects/projects.html
+
+
+### 12.2 CREATE Part 1 - Membuat form Template, View, Urls
+
+        Steps:
+
+        1. Membuat file baru: templates/projects/project_form.html
+        2. Membuat form templat
+        3. Membuat method view
+        4. Membuat path
+        5. Membuat link
+        6. Memeriksa hasilnya
+
+        modified:   README.md
+        new file:   projects/templates/projects/project_form.html
+        modified:   projects/urls.py
+        modified:   projects/views.py
+        modified:   templates/shared/navbar.html
