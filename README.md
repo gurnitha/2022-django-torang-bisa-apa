@@ -565,3 +565,14 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   projects/templates/projects/project_form.html
         modified:   projects/views.py
+
+
+### 12.5 CREATE Part 4 - Rendering Django form with title, label etc
+
+        Steps:
+
+        1. Ubah project_form
+        2. Memeriksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_form.html
