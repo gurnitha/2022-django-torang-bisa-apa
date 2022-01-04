@@ -504,3 +504,19 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   projects/templates/projects/project_single.html
         modified:   projects/views.py
+
+
+
+### 12. OPERASI CRUD
+--------------------
+
+
+### 12.1 READ - Menampilkan dafter proyek dalam tabel
+
+        Steps:
+
+        1. Modifikasi projects.html
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html

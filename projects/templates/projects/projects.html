@@ -6,22 +6,32 @@
 {% endblock title %}
 
 {% block content %}
-	<div>
-		<p><span style="color:darkgreen;">Isi pesan: </span>{{msg}}</p>
-	</div>
-	<hr>
-	<div>
-		<h1>Selamat Datang di Aplikasi Torang Bisa Apa?</h1>
-		<h4>Tempat para Coders, Developers, Content Creators 
-		dan orang-orang Creative Indonesia memamerkan hasil 
-		karya mereka ..</h4>
-	</div>
-	{% for project in projects %}
-		<ul>
-			<li><b>Product id:</b> {{project.id}}</li>
-			<li><b>Product title:</b><a href="{% url 'projects:project_single' project.id %}"> {{project.title}}</a></li>
-			<li><b>Product description:</b> {{project.description}}</li>
-		</ul>
-	{% endfor %}
+
+	<h1>Projects</h1>
+
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>Title</th>
+			<th>Positive votes</th>  
+			<th>Votes</th>
+			<th>Created</th>
+			<th></th>
+		</tr>
+		{% for project in projects %}
+		<tr>	
+			<td>{{project.id}}</td>
+			<td>{{project.title}}</td>
+			<td>{{project.vote_ratio}}%</td>
+			<td>{{project.vote_total}}</td>
+			<td>{{project.created}}</td>
+			<td><a href="{% url 'projects:project_single' project.id %}">View</a></td>
+		</tr>
+		{% endfor %}
+	</table>
+
+
 
 {% endblock content %}
+
+
