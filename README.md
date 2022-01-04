@@ -676,3 +676,14 @@ Oleh: I Nyoman Gurnitha
         new file:   static/images/default.jpg
         new file:   static/images/django-react-course.jpg
         new file:   static/images/icon.svg
+
+
+
+### 14. DEBUG, ALLOWED_HOSTS DAN WHITENOISE
+### ---------------------------------------
+
+
+#### 14.1 Setup DEBUG an ALLOWED_HOSTS
+
+        modified:   README.md
+        modified:   devsearch/settings.py
