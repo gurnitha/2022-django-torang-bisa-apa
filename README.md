@@ -832,3 +832,15 @@ Oleh: I Nyoman Gurnitha
         new file:   users/models.py
         new file:   users/tests.py
         new file:   users/views.py
+
+
+#### 16.2 Membuat profile page
+
+        Steps:
+
+        1. Membuat folder: users/templates
+        2. Membuat sub folder    : users/templates/users
+        3. Membuat profile page    : users/templates/users/profile.html
+
+        modified:   README.md
+        new file:   users/templates/users/profile.html        
