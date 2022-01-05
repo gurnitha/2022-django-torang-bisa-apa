@@ -798,3 +798,15 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   projects/forms.py
+
+
+#### 15.7 PROJECT_FORM page Part 4: Menggunakan for loop menggantikan teknik pada poin 15.6
+
+
+        Steps:
+
+        1. Buka projects/forms.py dan lakukan modifikasi
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   projects/forms.py
