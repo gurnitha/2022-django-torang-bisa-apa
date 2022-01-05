@@ -844,3 +844,18 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         new file:   users/templates/users/profile.html        
+
+
+#### 16.3 Membuat method profile_view dan urls
+
+        Steps:
+
+        1. Membuat method profile_view
+        2. Membuat file: users/urls.py
+        3. Membuat appname dan path untuk users
+        4. Register users/urls.py pada config/urls.py
+        5. Buka browser: http://127.0.0.1:8000/users/
+
+        modified:   config/urls.py
+        new file:   users/urls.py
+        modified:   users/views.py

@@ -8,7 +8,10 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    
+
+    # users
+    path('', include('users.urls', namespace='users')),
+
     # Projects
     path('', include('projects.urls', namespace='projects')),
     
