@@ -5,6 +5,7 @@ from django.db import models
 import uuid 
 
 # Locals
+from users.models import Profile
 
 # Create your models here.
 
@@ -17,6 +18,14 @@ class Project(models.Model):
 	   featured_image, demo_link, source_link, 
        tags, vote_total, vote_ratio, created dan id.
     '''
+    owner = models.ForeignKey(
+        # Hubungan ini menandai bahwa setiap proyek 
+        # merupakan milik seorang user atau seorang
+        # user dapat memiliki beberapa proyek
+        Profile, 
+        null=True, 
+        blank=True, 
+        on_delete=models.SET_NULL) # To keep the records eventhough he leaves
     title = models.CharField(
         max_length=200)
     description = models.TextField(

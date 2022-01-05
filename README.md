@@ -913,3 +913,18 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/admin.py
         new file:   users/migrations/0001_initial.py
+
+
+#### 18.3 Membuat hubungan ManyToOne antar Project and Profile
+
+        Steps:
+
+        1. Mengimpor django module uuid
+        2. Mengimpor model Profile
+        3. Membuat hubungan ManyToOne antar Project dan Profile
+        4. Menjalankan migrasi
+        5. Memeriksa hasilnya pada admin panel
+
+        modified:   README.md
+        new file:   projects/migrations/0006_project_owner.py
+        modified:   projects/models.py
