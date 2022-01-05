@@ -985,3 +985,14 @@ Oleh: I Nyoman Gurnitha
         new file:   static/images/profiles/arjuna.JPG
         new file:   static/images/profiles/ing.PNG
         new file:   static/images/profiles/kurukshetra_War.jpg
+
+
+#### 18.8 Display username pada projects page
+
+        Steps:
+
+        1. Display proyek owner
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
