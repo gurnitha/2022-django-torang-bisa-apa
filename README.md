@@ -892,7 +892,24 @@ Oleh: I Nyoman Gurnitha
         1. Import django module User
         2. Import django module uuid
         3. Buat model Profile
-        
+
         modified:   README.md
         modified:   users/models.py
 
+
+#### 18.2 Membuat tabel Profile pada database
+
+        Steps:
+
+        1. Membuat file migrasi
+        2. Memeriksa hasil perintah migrasi
+        3. Menjalankan file migrasi
+        4. Memeriksa hasil perintah menjalankan migrasi
+        5. Menjalankan perintah sqlmigrate
+        6. Register model Profile pada admin.py
+        7. Jalankan server
+        8. Memeriksa hasilnya pada admin panel
+
+        modified:   README.md
+        modified:   users/admin.py
+        new file:   users/migrations/0001_initial.py
