@@ -9,16 +9,19 @@ from .forms import ProjectForm
 
 # Create your views here.
 
+
 def projects_view(request):
 
     projects = Project.objects.all()
     page_title = 'Projects'
+    
     context = {
         'title':page_title,
         'projects':projects
     }
 
     return render(request, 'projects/projects.html', context)
+
 
 
 def project_single_view(request, pk):

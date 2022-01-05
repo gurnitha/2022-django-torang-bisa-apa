@@ -715,3 +715,33 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   templates/base.html
+
+
+#### 15.2 Menambahkan template theme untuk projects page
+
+        Steps:
+
+        1. Modifikasi static assets 
+        2. Mengisi template themes untuk projects.html
+        3. Modifikasi projects_view
+        4. Modifikasi base.html
+        5. Refresh browser untuk melihat hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   projects/views.py
+        modified:   templates/base.html
+        ...
+        new file:   static/images/DevSearch Projects.jpg
+        new file:   static/images/Devsearch Home.jpg
+        new file:   static/images/Devsearch Inbox.jpg
+        new file:   static/images/Devsearch Profile.jpg
+        new file:   static/images/favicon.ico
+        modified:   static/images/logo.svg
+        new file:   static/images/project-a.png
+        new file:   static/images/project-b.png
+        new file:   static/images/project-c.png
+        modified:   static/uikit/app.js
+        deleted:    static/uikit/index.html
+        modified:   static/uikit/styles/modules/_form.css
+        new file:   static/uikit/styles/modules/_formORI.css
