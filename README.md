@@ -859,3 +859,13 @@ Oleh: I Nyoman Gurnitha
         modified:   config/urls.py
         new file:   users/urls.py
         modified:   users/views.py
+
+
+#### 16.4 Extending base layout pada profiles page
+
+        1. Extends the base layout
+        2. Gunakanan the block tags
+        3. Test hasilnya
+        
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
