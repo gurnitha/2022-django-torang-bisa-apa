@@ -695,6 +695,23 @@ Oleh: I Nyoman Gurnitha
 
         1. Install whitenoise
         2. Setup whitenoise in settings.py
-        
+
         modified:   README.md
         modified:   devsearch/settings.py
+
+
+
+### 15. TEMPLATE THEMES
+### -------------------
+
+
+#### 15.1 Testing loading static files
+
+        Steps:
+
+        1. Add logo
+        2. Load static files
+        3. Memeriksa hasilnya
+
+        modified:   README.md
+        modified:   templates/base.html
