@@ -745,3 +745,13 @@ Oleh: I Nyoman Gurnitha
         deleted:    static/uikit/index.html
         modified:   static/uikit/styles/modules/_form.css
         new file:   static/uikit/styles/modules/_formORI.css
+
+
+#### 15.3 Mengisi template theme untuk project_single page
+
+        Steps:
+
+        1. Mengisi template themes untuk project_single.html
+        2. Untuk memeriksa hasilnya: Klik salah satu proyek pada projects page
+
+        modified:   projects/templates/projects/project_single.html
