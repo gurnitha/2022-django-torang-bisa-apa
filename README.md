@@ -932,7 +932,6 @@ Oleh: I Nyoman Gurnitha
 
 #### 18.4 Membuat beberapa user baru pada admin panel
 
-
         Steps:
 
         1. Pada admin panel, klik tanda +Add pada users
@@ -942,3 +941,18 @@ Oleh: I Nyoman Gurnitha
         5. Periksa hasilnya
 
         modified:   README.md
+
+
+#### 18.5 Menambahkan kolom username pada model Profile
+
+        Steps:
+
+        1. Menambahkan kolom username
+        2. Jalankan migrasi
+        3. Jalan server
+        4. Periksa hasilnya pada admin panel
+
+        modified:   README.md
+        new file:   static/images/profiles/bisma.PNG
+        new file:   users/migrations/0002_profile_username.py
+        modified:   users/models.py      

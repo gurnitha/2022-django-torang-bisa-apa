@@ -20,6 +20,10 @@ class Profile(models.Model):
     	max_length=500, 
     	blank=True, 
     	null=True)
+    username = models.CharField(
+        max_length=200, 
+        blank=True, 
+        null=True)
     short_intro = models.CharField(
     	max_length=200, 
     	blank=True, 
