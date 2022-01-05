@@ -1,20 +1,38 @@
 <!-- projects/templates/projects/project_form.html -->
 {% extends 'base.html' %}
 
-{% block title %}
-{{title}}
-{% endblock title %}
+{% block title %}{{title}}{% endblock title %}
 
 	{% block content %}
+	<main class="formPage my-xl">
+        <div class="content-box">
+            <div class="formWrapper">
+                <a class="backButton" href="#"><i class="im im-angle-left"></i></a>
+                <br>
 
-	<h1>Project Form</h1>
+                <!----------- Form ----------->
+                <form class="form" method="POST" enctype="multipart/form-data">
+                	{% csrf_token %}
 
-	<form action="" method="POST">
-		{% csrf_token %}
+                	{% for field in form %}
+                    <!-- Input:Text -->
+                    <div class="form__field">
+                        <label 
+                            for="formInput#text">{{field.label}}
+                        </label>
+                        {{field}}
+                    </div>
+                    {% endfor %}
 
-		{{form.as_p}}
+                    <input class="btn btn--sub btn--lg  my-md" type="submit" value="Submit" />
+                </form>
+                <!--------- END Form --------->
 
-		<input type="submit" name="">
-	</form>
-	
+            </div>
+        </div>
+    </main>
+
 	{% endblock content %}
+
+
+	

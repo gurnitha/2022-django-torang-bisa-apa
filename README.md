@@ -755,3 +755,23 @@ Oleh: I Nyoman Gurnitha
         2. Untuk memeriksa hasilnya: Klik salah satu proyek pada projects page
 
         modified:   projects/templates/projects/project_single.html
+
+
+#### 15.4 PROJECT_FORM page Part 1: Mengisi basic template theme
+
+        Steps:
+
+        1. Mengisi template themes untuk project_form.html
+        2. Untuk memeriksa hasilnya: Klik menu Add Project pada projects page
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_form.html
+
+
+        Note on Steps:
+
+        1. Keep 1 form field and the submit button and remove the rest
+        2. Use for loop to loop the ONE of the form field
+        3. Display form label: {{field.label}} 
+        4. Replace all line of the input tag with: {{field}} 
+        5. Check the result
