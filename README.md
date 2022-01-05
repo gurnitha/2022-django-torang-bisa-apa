@@ -928,3 +928,17 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         new file:   projects/migrations/0006_project_owner.py
         modified:   projects/models.py
+
+
+#### 18.4 Membuat beberapa user baru pada admin panel
+
+
+        Steps:
+
+        1. Pada admin panel, klik tanda +Add pada users
+        2. Isi form Add User
+        3. Klik Save
+        4. Change User dan save
+        5. Periksa hasilnya
+
+        modified:   README.md
