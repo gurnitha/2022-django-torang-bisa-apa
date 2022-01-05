@@ -878,3 +878,21 @@ Oleh: I Nyoman Gurnitha
 #### 17.4 House keeping - Renaming git commits messages
 
         modified:   README.md
+
+
+
+
+### 18. DINAMIS USER PROFILE PAGE
+--------------------------------
+
+#### 18.1 Membuat model Profile
+
+        Steps:
+
+        1. Import django module User
+        2. Import django module uuid
+        3. Buat model Profile
+        
+        modified:   README.md
+        modified:   users/models.py
+
