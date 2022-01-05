@@ -802,7 +802,6 @@ Oleh: I Nyoman Gurnitha
 
 #### 15.7 PROJECT_FORM page Part 4: Menggunakan for loop menggantikan teknik pada poin 15.6
 
-
         Steps:
 
         1. Buka projects/forms.py dan lakukan modifikasi
@@ -810,3 +809,26 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   projects/forms.py
+
+
+
+### 16. USERS APP
+-----------------
+
+#### 16.1 Membuat app baru dengan nama 'users'
+
+        Steps:
+
+        1. Membuat app 'users'
+        2. Register users
+        3. Jalankan server untuk menguji hasilnya
+
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   users/__init__.py
+        new file:   users/admin.py
+        new file:   users/apps.py
+        new file:   users/migrations/__init__.py
+        new file:   users/models.py
+        new file:   users/tests.py
+        new file:   users/views.py
