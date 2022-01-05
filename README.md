@@ -779,11 +779,22 @@ Oleh: I Nyoman Gurnitha
 
 #### 15.5 PROJECT_FORM page Part 2: Ubah tags field dari multiselect menajadi radio button
 
-
         Steps:
 
         1. Buka projects/forms.py dan lakukan modifikasi
         2. Memeriksa hasilnya
+
+        modified:   README.md
+        modified:   projects/forms.py
+
+
+#### 15.6 PROJECT_FORM page Part 3: Menambahkan class style pada input field
+
+
+        Steps:
+
+        1. Buka projects/forms.py dan lakukan modifikasi
+        2. Periksa hasilnya
 
         modified:   README.md
         modified:   projects/forms.py
