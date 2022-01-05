@@ -969,4 +969,19 @@ Oleh: I Nyoman Gurnitha
 
         new file:   static/images/baratayuda.jpg
         new file:   static/images/profiles/bisma_RfGIQGb.PNG
-        
+
+
+#### 18.7 Asain proyek ke masing-masing nama pengguna
+
+        Steps:
+
+        1. Buka proyek pada admin panel dan asain masing
+           - proyek pada username
+
+        modified:   README.md
+        new file:   static/images/baratayudha.PNG
+        new file:   static/images/django3.jpeg
+        new file:   static/images/mongodb.jpg
+        new file:   static/images/profiles/arjuna.JPG
+        new file:   static/images/profiles/ing.PNG
+        new file:   static/images/profiles/kurukshetra_War.jpg
