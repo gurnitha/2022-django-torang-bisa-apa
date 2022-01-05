@@ -956,3 +956,17 @@ Oleh: I Nyoman Gurnitha
         new file:   static/images/profiles/bisma.PNG
         new file:   users/migrations/0002_profile_username.py
         modified:   users/models.py      
+
+
+#### 18.6 Membuat sebuah proyek dari admi panel
+
+        Steps:
+
+        1. Membuat user
+        2. Membuat profile
+        3. Membuat proyek
+        4. Memeriksa hasilnya
+
+        new file:   static/images/baratayuda.jpg
+        new file:   static/images/profiles/bisma_RfGIQGb.PNG
+        
