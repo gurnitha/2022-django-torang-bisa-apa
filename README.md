@@ -834,7 +834,11 @@ Oleh: I Nyoman Gurnitha
         new file:   users/views.py
 
 
-#### 16.2 Membuat profile page
+
+### 17. STATIC USER PROFILE PAGE
+--------------------------------
+
+#### 17.1 Membuat profile page
 
         Steps:
 
@@ -846,7 +850,7 @@ Oleh: I Nyoman Gurnitha
         new file:   users/templates/users/profile.html        
 
 
-#### 16.3 Membuat method profile_view dan urls
+#### 17.2 Membuat method profile_view dan urls
 
         Steps:
 
@@ -861,7 +865,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 16.4 Extending base layout pada profiles page
+#### 17.3 Extending base layout pada profiles page
 
         1. Extends the base layout
         2. Gunakanan the block tags
@@ -869,3 +873,8 @@ Oleh: I Nyoman Gurnitha
         
         modified:   README.md
         modified:   users/templates/users/profiles.html
+
+
+#### 17.4 House keeping - Renaming git commits messages
+
+        modified:   README.md
