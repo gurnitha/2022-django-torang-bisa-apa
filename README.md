@@ -775,3 +775,15 @@ Oleh: I Nyoman Gurnitha
         3. Display form label: {{field.label}} 
         4. Replace all line of the input tag with: {{field}} 
         5. Check the result
+
+
+#### 15.5 PROJECT_FORM page Part 2: Ubah tags field dari multiselect menajadi radio button
+
+
+        Steps:
+
+        1. Buka projects/forms.py dan lakukan modifikasi
+        2. Memeriksa hasilnya
+
+        modified:   README.md
+        modified:   projects/forms.py
