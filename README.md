@@ -1124,3 +1124,15 @@ Oleh: I Nyoman Gurnitha
         new file:   users/templates/users/profile_user.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 20.2 Mengganti logo
+
+        Steps:
+
+        1. Ganti logo
+        2. Periksa hasilnya
+
+        modified:   README.md
+        new file:   static/images/tba-logo.JPG
+        modified:   templates/base.html
