@@ -1136,3 +1136,19 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         new file:   static/images/tba-logo.JPG
         modified:   templates/base.html
+
+
+#### 20.3 Mengubah nama file
+
+        Steps:
+
+        1. Ubah nama file dari users/profile.html menjadi users/profiles.html
+        2. Ubah juga nama file pada profile_view
+
+        modified:   README.md
+        renamed:    users/templates/users/profile.html -> users/templates/users/profiles.html
+        modified:   users/views.py
+
+
+
+

@@ -18,7 +18,7 @@ def profile_view(request):
 		'skills': skills
 	}
 
-	return render(request, 'users/profile.html', context)
+	return render(request, 'users/profiles.html', context)
 
 
 # Profile User view
