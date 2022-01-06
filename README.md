@@ -996,3 +996,18 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   projects/templates/projects/projects.html
+
+
+
+### 19. THEMING USERS PROFILES PAGE
+-----------------------------------
+
+#### 19.1 Menambahkan template theme pada user profiles page
+
+        Steps:
+
+        1. Buka dan tambahkan template theme pada user profiles page
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/profile.html
