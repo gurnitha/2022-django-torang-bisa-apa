@@ -13,6 +13,7 @@ def profile_view(request):
 
 	profiles = Profile.objects.all()
 	skills = Skill.objects.all()
+	
 	context = {
 		'profiles':profiles,
 		'skills': skills
@@ -23,4 +24,11 @@ def profile_view(request):
 
 # Profile User view
 def profile_user_view(request, pk):
-	return render(request, 'users/profile_user.html')
+
+	profile = Profile.objects.get(id=pk)
+	
+	context = {
+		'profile':profile,
+	}
+	
+	return render(request, 'users/profile_user.html', context)

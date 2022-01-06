@@ -1150,5 +1150,14 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
+#### 20.4 Membuat user profile page dinamis - Aside Part 1
 
+        Steps:
 
+        1. Load data Profile dari db
+        2. Display data pada user profile page
+        3. Perikasa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/profile_user.html
+        modified:   users/views.py

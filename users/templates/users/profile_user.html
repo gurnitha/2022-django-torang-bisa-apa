@@ -14,10 +14,10 @@
                     <div class="card text-center">
                         <div class="card__body dev">
                             <img class="avatar avatar--xl" 
-                            src="{% static 'images/ing.png' %}" />
-                            <h2 class="dev__name">ING After 63</h2>
-                            <p class="dev__title">Django Web Developer</p>
-                            <p class="dev__location">Based di Bogor, Indonesia</p>
+                                src="{{profile.profile_image.url}}" />
+                            <h2 class="dev__name">{{profile.name}}</h2>
+                            <p class="dev__title">{{profile.short_intro|slice:50}}</p>
+                            <p class="dev__location">Based di {{profile.location}}</p>
                             <ul class="dev__social">
                                 <li>
                                     <a title="Github" href="#" target="_blank">
