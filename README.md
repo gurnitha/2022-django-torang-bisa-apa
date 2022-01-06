@@ -1011,3 +1011,25 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/profile.html
+
+
+#### 19.2 Modifikasi users, profiles, projects
+
+        Steps:
+
+        1. Pad admin panel, lakukan modifikasi users
+        2. Hasil modifikasi users
+        3. Pada admin panel, lakukan modifikasi profile
+        4. Pada admin panel, lakukan modifikasi proyek
+        5. Hasil modifikasi proyek
+
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        new file:   static/images/desainlokal.JPG
+        new file:   static/images/desainlokal_2clmuVo.jpg
+        new file:   static/images/desainlokal_PC8fub5.JPG
+        new file:   static/images/profiles/gurunmeao.JPG
+        new file:   static/images/profiles/saiber.w.JPG
+        new file:   static/images/profiles/tahbahken.JPG
+        new file:   static/images/tba.jpg
