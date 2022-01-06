@@ -3,11 +3,11 @@
 
 {% block title %}Profiles{% endblock title %}
 
-	{% block content %}
+    {% block content %}
 
-	<main class="home">
+    <main class="home">
 
-		<!-- Header -->
+        <!-- Header -->
         <section class="hero-section text-center">
             <div class="container container--narrow">
                 <div class="hero-section__box">
@@ -32,22 +32,22 @@
         <section class="devlist">
             <div class="container">
                 <div class="grid grid--three">
-
-                	<!-- Card -->
+                    
+                    {% for profile in profiles %}
+                    <!-- Card -->
                     <div class="column card">
                         <div class="dev">
-                            <a href="/profile.html" class="card__body">
+                            <a href="" class="card__body">
                                 <div class="dev__profile">
-                                    <img class="avatar avatar--md" src="https://avatars.githubusercontent.com/u/22437185" alt="image" />
+                                    <img class="avatar avatar--md" 
+                                        src="{{profile.profile_image.url}}" alt="image" />
                                     <div class="dev__meta">
-                                        <h3>Endiar DKK</h3>
-                                        <h5>FullStack Web Designer & Developer</h5>
+                                        <h3>{{profile.name}}</h3>
+                                        <h5>{{profile.short_intro|slice:"50"}}</h5>
                                     </div>
                                 </div>
                                 <p class="dev__info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ducimus inventore! Sunt,
-                                    veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
-                                    animi, exercitationem molestias nam doloremque architecto odit.
+                                    {{profile.bio|truncatewords:50}}
                                 </p>
                                 <div class="dev__skills">
                                     <span class="tag tag--pill tag--main">
@@ -73,158 +73,12 @@
                         </div>
                     </div>
                     <!-- END Card -->
-                    
-                    <div class="column card">
-                        <div class="dev">
-                            <a href="/profile.html" class="card__body">
-                                <div class="dev__profile">
-                                    <img class="avatar avatar--md" src="https://avatars.githubusercontent.com/u/1868783" alt="image" />
-                                    <div class="dev__meta">
-                                        <h3>Saiber W.</h3>
-                                        <h5>React Developer, Coding Youtuber</h5>
-                                    </div>
-                                </div>
-                                <p class="dev__info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ducimus inventore! Sunt,
-                                    veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
-                                    animi, exercitationem molestias nam doloremque architecto odit.
-                                </p>
-                                <div class="dev__skills">
-                                    <span class="tag tag--pill tag--main">
-                                    <small>Elixir</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>F#</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>.NET</small>
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column card">
-                        <div class="dev">
-                            <a href="/profile.html" class="card__body">
-                                <div class="dev__profile">
-                                    <img class="avatar avatar--md" src="https://avatars.githubusercontent.com/u/33843383" alt="image" />
-                                    <div class="dev__meta">
-                                        <h3>Tambahken</h3>
-                                        <h5>Python & Django Developer</h5>
-                                    </div>
-                                </div>
-                                <p class="dev__info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ducimus inventore! Sunt,
-                                    veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
-                                    animi, exercitationem molestias nam doloremque architecto odit.
-                                </p>
-                                <div class="dev__skills">
-                                    <span class="tag tag--pill tag--main">
-                                    <small>Python</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>Django</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>Rest API</small>
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column card">
-                        <div class="dev">
-                            <a href="/profile.html" class="card__body">
-                                <div class="dev__profile">
-                                    <img class="avatar avatar--md" src="https://avatars.githubusercontent.com/u/22437188" alt="image" />
-                                    <div class="dev__meta">
-                                        <h3>Gurun Meao</h3>
-                                        <h5>FullStack Web Designer & Developer</h5>
-                                    </div>
-                                </div>
-                                <p class="dev__info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ducimus inventore! Sunt,
-                                    veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
-                                    animi, exercitationem molestias nam doloremque architecto odit.
-                                </p>
-                                <div class="dev__skills">
-                                    <span class="tag tag--pill tag--main">
-                                    <small>JavaScript</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>React</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>SCSS</small>
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column card">
-                        <div class="dev">
-                            <a href="/profile.html" class="card__body">
-                                <div class="dev__profile">
-                                    <img class="avatar avatar--md" src="https://avatars.githubusercontent.com/u/22437186" alt="image" />
-                                    <div class="dev__meta">
-                                        <h3>Brigit</h3>
-                                        <h5>FullStack Web Designer & Developer</h5>
-                                    </div>
-                                </div>
-                                <p class="dev__info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ducimus inventore! Sunt,
-                                    veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
-                                    animi, exercitationem molestias nam doloremque architecto odit.
-                                </p>
-                                <div class="dev__skills">
-                                    <span class="tag tag--pill tag--main">
-                                    <small>JavaScript</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>React</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>SCSS</small>
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="column card">
-                        <div class="dev">
-                            <a href="/profile.html" class="card__body">
-                                <div class="dev__profile">
-                                    <img class="avatar avatar--md" src="https://avatars.githubusercontent.com/u/22437286" alt="image" />
-                                    <div class="dev__meta">
-                                        <h3>Virginia</h3>
-                                        <h5>FullStack Web Designer & Developer</h5>
-                                    </div>
-                                </div>
-                                <p class="dev__info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ducimus inventore! Sunt,
-                                    veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
-                                    animi, exercitationem molestias nam doloremque architecto odit.
-                                </p>
-                                <div class="dev__skills">
-                                    <span class="tag tag--pill tag--main">
-                                    <small>JavaScript</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>React</small>
-                                    </span>
-                                    <span class="tag tag--pill tag--main">
-                                    <small>SCSS</small>
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
-        <!-- END Search Result: DevList -->
 
-        <!-- Footer -->
+        <!-- Pagination -->
         <div class="pagination">
             <ul class="container">
                 <li><a href="#" class="btn btn--disabled">&#10094; Prev</a></li>
@@ -241,8 +95,7 @@
                 <li><a href="#" class="btn">Next &#10095;</a></li>
             </ul>
         </div>
-        <!-- END Footer -->
+        <!-- END Pagination -->
     </main>
 
-	{% endblock content %}
-
+    {% endblock content %}

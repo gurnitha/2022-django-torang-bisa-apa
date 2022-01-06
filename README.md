@@ -1070,3 +1070,17 @@ Oleh: I Nyoman Gurnitha
         2. Buka admin panel dan input location
 
         modified:   README.md
+
+
+#### 19.6 Menampilkan data profile dari db pada profile page
+
+        Steps:
+
+        1. Import dan load model Profile
+        2. Loop data profiles pada profile page
+        3. Periksa hasilnya
+
+        modified:   README.md
+        new file:   static/images/profiles/endiardkk.JPG
+        modified:   users/templates/users/profile.html
+        modified:   users/views.py
