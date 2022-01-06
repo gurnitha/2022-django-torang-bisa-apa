@@ -4,7 +4,7 @@
 from django.shortcuts import render
 
 # Locals
-from . models import Profile 
+from . models import Profile, Skill 
 
 # Create your views here.
 
@@ -12,8 +12,10 @@ from . models import Profile
 def profile_view(request):
 
 	profiles = Profile.objects.all()
+	skills = Skill.objects.all()
 	context = {
-		'profiles':profiles
+		'profiles':profiles,
+		'skills': skills
 	}
 
 	return render(request, 'users/profile.html', context)

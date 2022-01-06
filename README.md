@@ -1084,3 +1084,17 @@ Oleh: I Nyoman Gurnitha
         new file:   static/images/profiles/endiardkk.JPG
         modified:   users/templates/users/profile.html
         modified:   users/views.py
+
+
+#### 19.7 Menampilkan data skill dari db pada profile page
+
+        Steps:
+
+        1. Re-input skill
+        2. Import dan load model Profile
+        3. Loop data profiles pada profile page
+        4. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/profile.html
+        modified:   users/views.py
