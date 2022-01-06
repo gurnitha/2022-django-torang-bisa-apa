@@ -1033,3 +1033,18 @@ Oleh: I Nyoman Gurnitha
         new file:   static/images/profiles/saiber.w.JPG
         new file:   static/images/profiles/tahbahken.JPG
         new file:   static/images/tba.jpg
+
+
+#### 19.3 Membuat model Skill
+
+        Steps:
+
+        1. Buka users/models.py dan buat model Skill
+        2. Jalankan migrasi
+        3. Register model Skill pada users/admin.py
+        4. Jalankan server dan periksa hasilnya pada admin panel
+
+        modified:   README.md
+        modified:   users/admin.py
+        new file:   users/migrations/0003_skill.py
+        modified:   users/models.py
