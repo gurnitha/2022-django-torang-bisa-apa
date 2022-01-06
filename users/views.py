@@ -26,9 +26,13 @@ def profile_view(request):
 def profile_user_view(request, pk):
 
 	profile = Profile.objects.get(id=pk)
-	
+
+	'''Get skill yg ada deskripsinya'''
+	topSkills = profile.skill_set.exclude(description__exact="")
+
 	context = {
 		'profile':profile,
+		'topSkills':topSkills
 	}
 	
 	return render(request, 'users/profile_user.html', context)

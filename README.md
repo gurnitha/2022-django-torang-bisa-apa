@@ -1172,3 +1172,22 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/profile_user.html
+
+
+#### 20.6 Membuat user profile page dinamis - About
+
+        Steps:
+
+        1. Display data bio
+        2. Periksa hasilnya
+
+
+#### 20.7 Membuat user profile page dinamis - Skill dengan deskripsi
+
+        Steps:
+
+        1. Display data skill dengan deskripsi
+        2. Periksa hasilnya
+
+        modified:   users/templates/users/profile_user.html
+        modified:   users/views.py
