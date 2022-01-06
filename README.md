@@ -1203,3 +1203,14 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/profile_user.html
         modified:   users/views.py
+
+
+#### 20.9 Membuat user profile page dinamis - Showing all projects AS CHILD of profile
+
+        Steps:
+
+        1. Display data skill tanpa deskripsi
+        2. Periksa hasilnya
+        
+        modified:   README.md
+        modified:   users/templates/users/user-profile.html
