@@ -19,3 +19,8 @@ def profile_view(request):
 	}
 
 	return render(request, 'users/profile.html', context)
+
+
+# Profile User view
+def profile_user_view(request, pk):
+	return render(request, 'users/profile_user.html')

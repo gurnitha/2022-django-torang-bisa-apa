@@ -1098,3 +1098,29 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/profile.html
         modified:   users/views.py
+
+
+
+### 20. HALAMAN PROFIL USER
+---------------------------
+
+
+#### 20.1 Membuat halaman statis profil user - Template, View dan Urls
+
+        Steps:
+
+        1. Modifikasi projects/urls.py
+        2. Membuat file templates/users/profile_user.html
+        3. Mengisi template theme untuk profile_user
+        4. Membuat method profile_user_view
+        5. Membuat path profile_user
+        6. Membuat link untuk profile_user
+        7. Memeriksa hasilnya
+
+
+        modified:   README.md
+        modified:   projects/urls.py
+        modified:   users/templates/users/profile.html
+        new file:   users/templates/users/profile_user.html
+        modified:   users/urls.py
+        modified:   users/views.py
