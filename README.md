@@ -1161,3 +1161,14 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/profile_user.html
         modified:   users/views.py
+
+
+#### 20.5 Membuat user profile page dinamis - Aside Part 2 sosial media
+
+        Steps:
+
+        1. Display data sosmed menggunakan kondisional
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/profile_user.html
