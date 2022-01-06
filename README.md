@@ -1211,6 +1211,19 @@ Oleh: I Nyoman Gurnitha
 
         1. Display data skill tanpa deskripsi
         2. Periksa hasilnya
-        
+
         modified:   README.md
         modified:   users/templates/users/user-profile.html
+
+
+#### 20.10 Membuat user profile page dinamis - Display tags yg berkaitan dgn proyek yg dimiliki oleh user
+
+        Steps:
+
+        1. Load data tags pada method profile_user_view
+        2. Display tags pada profile_user page
+        3. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/user-profile.html
+        modified:   users/views.py

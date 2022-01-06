@@ -126,17 +126,17 @@
                                                 {{obj.vote_total}} 
                                                 Vote{{obj.vote_total|pluralize:"s"}})
                                         </p>
-                                        <div class="project__tags">
-                                            <span class="tag tag--pill tag--main">
-                                                <small>NextJS</small>
-                                            </span>
-                                            <span class="tag tag--pill tag--main">
-                                                <small>GraphQL</small>
-                                            </span>
-                                            <span class="tag tag--pill tag--main">
-                                                <small>TypeScript</small>
-                                            </span>
-                                        </div>
+                                            
+                                            <!-- Tags -->
+                                            <div class="project__tags">
+                                                {% for tag in obj.tags.all %}
+                                                <span class="tag tag--pill tag--main">
+                                                <small>{{tag.name}}</small>
+                                                </span>
+                                                {% endfor %}
+                                            </div>
+                                            <!-- END Tags -->
+                                            
                                         </div>
                                     </a>
                                 </div>
