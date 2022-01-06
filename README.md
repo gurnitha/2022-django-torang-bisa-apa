@@ -1191,3 +1191,15 @@ Oleh: I Nyoman Gurnitha
 
         modified:   users/templates/users/profile_user.html
         modified:   users/views.py
+
+
+#### 20.8 Membuat user profile page dinamis - Skill tanpa deskripsi
+
+        Steps:
+
+        1. Display data skill tanpa deskripsi
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/profile_user.html
+        modified:   users/views.py

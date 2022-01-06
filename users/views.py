@@ -30,9 +30,13 @@ def profile_user_view(request, pk):
 	'''Get skill yg ada deskripsinya'''
 	topSkills = profile.skill_set.exclude(description__exact="")
 
+	'''Get skill tidak ada deskripsinya'''
+	otherSkills = profile.skill_set.filter(description="")
+
 	context = {
 		'profile':profile,
-		'topSkills':topSkills
+		'topSkills':topSkills,
+		'otherSkills':otherSkills
 	}
 	
 	return render(request, 'users/profile_user.html', context)
