@@ -24,6 +24,10 @@ class Profile(models.Model):
         max_length=200, 
         blank=True, 
         null=True)
+    location = models.CharField(
+        max_length=200, 
+        blank=True, 
+        null=True)
     short_intro = models.CharField(
     	max_length=200, 
     	blank=True, 

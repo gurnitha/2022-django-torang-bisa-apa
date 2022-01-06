@@ -1048,3 +1048,15 @@ Oleh: I Nyoman Gurnitha
         modified:   users/admin.py
         new file:   users/migrations/0003_skill.py
         modified:   users/models.py
+
+
+#### 19.4 Menambahkan kolom location pada model Profile
+
+        Steps:
+
+        1. Buka users/models.py dan tambahkan kolom location
+        2. Jalankan migrasi, server dan periksa hasilnya
+
+        modified:   README.md
+        new file:   users/migrations/0004_profile_location.py
+        modified:   users/models.py
