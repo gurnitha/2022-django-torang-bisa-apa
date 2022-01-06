@@ -1060,3 +1060,13 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         new file:   users/migrations/0004_profile_location.py
         modified:   users/models.py
+
+
+#### 19.5 Menginput skill dan location melalui admin panel
+
+        Steps:
+
+        1. Buka admin panel dan input skill
+        2. Buka admin panel dan input location
+
+        modified:   README.md
