@@ -1250,3 +1250,14 @@ Oleh: I Nyoman Gurnitha
         2. Periksa hasilnya
         modified:   README.md
         modified:   users/templates/users/profile_user.html
+
+
+#### 20.13 Membuat user profile page dinamis - Membatasi jumlah skill yg didisplay pada profiles page
+
+        Steps:
+
+        1. Batasi jumlah skill
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
