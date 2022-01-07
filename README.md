@@ -1296,3 +1296,19 @@ Oleh: I Nyoman Gurnitha
 
         1. Betulkan file
         2. Lihat hasilnya
+
+
+
+### 22. DJANGO SIGNALS
+----------------------
+
+#### 22.1  Create and delete a new profile and print out the signals reaction
+
+        Steps:
+
+        1. Import post_save and post_delete dari signals
+        2. Buat method
+        3. Test dan lihat hasilnya
+
+        modified:   README.md
+        modified:   users/models.py
