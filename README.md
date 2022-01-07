@@ -1227,3 +1227,16 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/user-profile.html
         modified:   users/views.py
+
+
+#### 20.11 Membuat user profile page dinamis - linking nama owner dengan user_profile page
+
+        Steps:
+
+        1. Buat link
+        2. Buat link
+        3. Periksa hasilnya
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        modified:   templates/base.html
