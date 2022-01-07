@@ -1189,7 +1189,7 @@ Oleh: I Nyoman Gurnitha
         1. Display data bio
         2. Periksa hasilnya
         ------
-        
+
         Steps:
 
         1. Display data skill dengan deskripsi
@@ -1283,3 +1283,16 @@ Oleh: I Nyoman Gurnitha
 #### 20.15 House keeping: Modifikasi messages poin 20.24 s.d 20.14 
 
         modified:   README.md
+
+
+
+### 21. FIXING PROJECTS FILE
+----------------------------
+
+
+#### 21.1 Memperbaiki tampilan projects dengan membetulkan letak codes
+
+        Steps:
+
+        1. Betulkan file
+        2. Lihat hasilnya
