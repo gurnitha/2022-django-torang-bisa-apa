@@ -1240,3 +1240,13 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   projects/templates/projects/projects.html
         modified:   templates/base.html
+
+
+#### 20.12 Membuat user profile page dinamis - linking nama owner dengan profile_user page untuk re-load the page
+
+        Steps:
+
+        1. Buat link
+        2. Periksa hasilnya
+        modified:   README.md
+        modified:   users/templates/users/profile_user.html
