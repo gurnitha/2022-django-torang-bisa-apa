@@ -113,7 +113,8 @@
                             <!-- Card -->
                             <div class="column">
                                 <div class="card project">
-                                    <a href="single-project.html" class="project">
+                                    <!-- <a href="single-project.html" class="project"> -->
+                                    <a href="{% url 'projects:project_single' obj.id %}" class="project">
                                         <img class="project__thumbnail" 
                                             src="{{obj.featured_image.url}}" alt="project thumbnail" />
                                         <div class="card__body">

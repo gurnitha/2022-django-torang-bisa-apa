@@ -1261,3 +1261,14 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/profiles.html
+
+
+#### 20.14 Membuat user profile page dinamis - Buat link ke project_single
+
+        Steps:
+
+        1. Buat link
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/profile_user.html
