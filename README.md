@@ -1150,7 +1150,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 20.4 Membuat user profile page dinamis - Aside Part 1
+#### 20.4 Membuat user profile page dinamis Part 1 - Aside (nama dan lokasi)
 
         Steps:
 
@@ -1163,7 +1163,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 20.5 Membuat user profile page dinamis - Aside Part 2 sosial media
+#### 20.5 Membuat user profile page dinamis Part 2 - Aside (sosial media)
 
         Steps:
 
@@ -1174,7 +1174,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/profile_user.html
 
 
-#### 20.6 Membuat user profile page dinamis - About
+#### 20.6 Membuat user profile page dinamis Part 3 - About
 
         Steps:
 
@@ -1182,8 +1182,14 @@ Oleh: I Nyoman Gurnitha
         2. Periksa hasilnya
 
 
-#### 20.7 Membuat user profile page dinamis - Skill dengan deskripsi
+#### 20.7 Membuat user profile page dinamis Part 4 - About dan Skill dengan deskripsi
+        
+        Steps:
 
+        1. Display data bio
+        2. Periksa hasilnya
+        ------
+        
         Steps:
 
         1. Display data skill dengan deskripsi
@@ -1193,7 +1199,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 20.8 Membuat user profile page dinamis - Skill tanpa deskripsi
+#### 20.8 Membuat user profile page dinamis Part 5 - Skill tanpa deskripsi
 
         Steps:
 
@@ -1205,7 +1211,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 20.9 Membuat user profile page dinamis - Showing all projects AS CHILD of profile
+#### 20.9 Membuat user profile page dinamis Part 6 - Showing all projects AS CHILD of profile
 
         Steps:
 
@@ -1216,7 +1222,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/user-profile.html
 
 
-#### 20.10 Membuat user profile page dinamis - Display tags yg berkaitan dgn proyek yg dimiliki oleh user
+#### 20.10 Membuat user profile page dinamis Part 7 - Display tags yg berkaitan dgn proyek yg dimiliki oleh user
 
         Steps:
 
@@ -1229,7 +1235,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 20.11 Membuat user profile page dinamis - linking nama owner dengan user_profile page
+#### 20.11 Membuat user profile page dinamis Part 8 - linking nama owner dengan user_profile page
 
         Steps:
 
@@ -1242,7 +1248,7 @@ Oleh: I Nyoman Gurnitha
         modified:   templates/base.html
 
 
-#### 20.12 Membuat user profile page dinamis - linking nama owner dengan profile_user page untuk re-load the page
+#### 20.12 Membuat user profile page dinamis Part 9 - linking nama owner dengan profile_user page untuk re-load the page
 
         Steps:
 
@@ -1252,7 +1258,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/profile_user.html
 
 
-#### 20.13 Membuat user profile page dinamis - Membatasi jumlah skill yg didisplay pada profiles page
+#### 20.13 Membuat user profile page dinamis Part 10 - Membatasi jumlah skill yg didisplay pada profiles page
 
         Steps:
 
@@ -1263,7 +1269,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/profiles.html
 
 
-#### 20.14 Membuat user profile page dinamis - Buat link ke project_single
+#### 20.14 Membuat user profile page dinamis Part 11 - Buat link ke project_single
 
         Steps:
 
@@ -1272,3 +1278,8 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/profile_user.html
+
+
+#### 20.15 House keeping: Modifikasi messages poin 20.24 s.d 20.14 
+
+        modified:   README.md
