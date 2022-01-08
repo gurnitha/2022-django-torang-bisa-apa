@@ -1342,3 +1342,21 @@ Oleh: I Nyoman Gurnitha
         1. User dibuat, profile terbuat
         2. User dihapus, profile terhapus
         3. Profile dihapus, user tidak terhapus
+
+
+#### 22.4  Django signals - Bila profile dihapus, user juga akan terhapus secara otomatis
+
+        Steps:
+
+        1. Import receiver, post_save and post_delete dari signals
+        2. Buat method
+        3. Test dan lihat hasilnya
+
+        modified:   README.md
+        modified:   users/models.py
+
+
+        NOTE:
+        1. User dibuat, profile terbuat
+        2. User dihapus, profile terhapus
+        3. Profile dihapus, user juga terhapus
