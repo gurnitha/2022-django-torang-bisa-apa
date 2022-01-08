@@ -1663,6 +1663,18 @@ Oleh: I Nyoman Gurnitha
         1. Add labels pada forms.py
         2. Periksa hasilnya
         3. Test it out
-        
+
         modified:   README.md
         modified:   users/forms.py
+
+
+#### 19.18 REGISTER - LOGIN Part 1 - Add template theme
+
+        Steps:
+
+        1. Buka register_login page dan add template theme
+        2. Buka browser, periksa hasilnya
+        
+
+        modified:   README.md
+        modified:   users/templates/users/register_login.html
