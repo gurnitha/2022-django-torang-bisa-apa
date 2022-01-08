@@ -21,6 +21,7 @@ from .models import Profile
 # Signals
 # @receiver(post_save, sender=Profile)
 def createProfile(sender, instance, created, **kwargs):
+    print('Profile signal triggered ...')
     # Check if this was the first signal of new user
     if created:
         user = instance # <-- instance of the User

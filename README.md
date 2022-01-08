@@ -1378,3 +1378,21 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/models.py
         new file:   users/signals.py
+
+
+#### 22.6  Django signals - Menggunakan method ready() untuk mentriger signals
+
+        Steps:
+
+        1. Buka users/apps.py
+        2. Tambahkan method ready()
+        3. import signals dari users
+        4. Add Print  ...
+        5. Testing:
+           - open a user
+           - update it and save it
+           - see the result in the terminal
+
+        modified:   README.md
+        modified:   users/apps.py
+        modified:   users/signals.py
