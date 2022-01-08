@@ -13,6 +13,12 @@ from projects.models import Tag
 
 # loginUser view
 def loginUser(request):
+	
+	# Cek jika ada request dengan method POST
+	if request.method == 'POST':
+		# Print out the input in the terminal
+		print(request.POST)
+
 	return render(request, 'users/auth/register_login.html')
 
 # -------------------END Authentication ---------------

@@ -1428,3 +1428,15 @@ Oleh: I Nyoman Gurnitha
         
         modified:   README.md
         modified:   users/templates/users/register_login.html
+
+
+#### 19.3 Login Part 3 - Membuat basic logic page userLogin view
+
+        Steps:
+
+        1. Buat logic nya
+        2. Test it out 
+        3. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/views.py
