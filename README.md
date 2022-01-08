@@ -1565,3 +1565,16 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   templates/base.html
         modified:   users/views.py
+
+
+#### 19.11 REGISTER Part 1 - Create View dan Urls
+
+        Steps:
+
+        1. Buat method registerUser dan gunakan template register_login.html
+        2. Buat path untuk register
+        3. Tes hasilnya
+
+        modified:   README.md
+        modified:   users/urls.py
+        modified:   users/views.py

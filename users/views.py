@@ -14,6 +14,13 @@ from projects.models import Tag
 
 # -------------------Authentication -------------------
 
+# registerUser view
+def registerUser(request):
+	page = 'register'
+	context = {'page':page}
+	return render(request, 'users/auth/register_login.html', context)
+
+
 # loginUser view
 def loginUser(request):
 
