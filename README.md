@@ -1616,3 +1616,41 @@ Oleh: I Nyoman Gurnitha
         1. A new was user successfully created.
 
         modified:   users/views.py
+
+
+#### 19.15 REGISTER Part 5 - Authomatically login user after Signing up
+
+        Steps:
+
+        1. Pada registerUser tambahkan lagi logic agar
+           user yang berhasil melakukan register di
+           redirect ke laman profile
+        2. Tunjukkan failed message jika registration failed  
+        3. Test it out
+
+        NOTE:
+
+        Kita memanfaatkan login session untuk me-login
+        user baru
+
+        modified:   users/views.py
+
+
+#### 19.16 REGISTER Part 6 - Membuat CustomUserCreationForm
+
+        Steps:
+
+        -- forms.py
+        1. Buat file baru: users/forms.py
+        2. Import modules 
+        3. Buat class CustomUserCreationForm
+        4. Tentukan form fields
+        
+        -- views
+        5. Remove UserCreationForm
+        6. Modifikasi registerUser view method
+        7. Test it out and see the result
+
+        modified:   README.md
+        new file:   users/forms.py
+        modified:   users/views.py

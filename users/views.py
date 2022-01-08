@@ -5,11 +5,12 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 from django.contrib import messages
-from django.contrib.auth.forms import UserCreationForm
+# from django.contrib.auth.forms import UserCreationForm
 
 # Locals
 from . models import Profile, Skill
 from projects.models import Tag 
+from . forms import CustomUserCreationForm
 
 # Create your views here.
 
@@ -19,15 +20,16 @@ from projects.models import Tag
 def registerUser(request):
 
 	page = 'register'
-	form = UserCreationForm
-
+	# form = UserCreationForm
+	form = CustomUserCreationForm
+	
 	# Logic to register user
 
 	# 1. If the request is POST, then
 	#    use UserCreationForm
 	if request.method == 'POST':
-		form = UserCreationForm(request.POST)
-
+		# form = UserCreationForm(request.POST)
+		form = CustomUserCreationForm(request.POST)
 		''' 
 		2. Authenticate the form, 
 		   get the user's instance,
@@ -40,8 +42,16 @@ def registerUser(request):
 			user.username = user.username.lower()
 			user.save()
 
-		# Message
-		messages.success(request, 'User account was successfully created!')
+			# Message
+			messages.success(request, 'User account was successfully created!')
+
+			# Automatically Log in user after signing up
+			login(request, user)
+			return redirect('users:profiles')
+
+		# 3. If register faild
+		else:
+			messages.success(request, 'An error occurred during registration!')
 
 	context = {
 		'page':page,
