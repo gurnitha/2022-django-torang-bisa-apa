@@ -1360,3 +1360,21 @@ Oleh: I Nyoman Gurnitha
         1. User dibuat, profile terbuat
         2. User dihapus, profile terhapus
         3. Profile dihapus, user juga terhapus
+
+
+#### 22.5  Django signals - Menempatkan signals pada file tersendiri
+
+        Steps:
+
+        1. Buat file signals: users/signals.py
+        2. Pindahkan signals dari users/models.py
+        3. Testing
+
+        NOTE:
+        -----
+        1. User berhasil dibuat
+        2. Profile TIDAK berhasil
+
+        modified:   README.md
+        modified:   users/models.py
+        new file:   users/signals.py
