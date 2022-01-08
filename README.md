@@ -1440,3 +1440,21 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/views.py
+
+
+#### 19.4 Login Part 4 - Membuat authentication logic
+
+        Steps:
+
+        1. Add inline style pada form dan periksa hasilnya
+        2. Membuat authentication logic pada userLogin
+        3. Test dengan user yg tdk ada di dalam db
+        4. Periksa hasilnya
+        5. Test dengan user yg ADA di dalam db
+        6. Periksa hasilnya
+        
+        modified:   README.md
+        modified:   users/templates/users/auth/register_login.html
+        modified:   users/views.py
+
+        
