@@ -1546,3 +1546,22 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   templates/base.html
+
+
+#### 19.10 MESSAGES - Adding flash error message to login dan logout
+
+        Steps:
+
+        1. Import messages modules
+        2. Gunakan messages module with error method
+        3. Add message tags pada base page
+        4. Coba dan lihat hasilnya
+
+        NOTE:
+        1. Flash messages berhasil
+
+        NEXT> Registrasi
+
+        modified:   README.md
+        modified:   templates/base.html
+        modified:   users/views.py
