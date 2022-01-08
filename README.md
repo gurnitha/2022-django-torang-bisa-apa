@@ -1654,3 +1654,15 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         new file:   users/forms.py
         modified:   users/views.py
+
+
+#### 19.17 REGISTER Part 7 - Change reg form field from 'First name' to 'Name'
+
+        Steps:
+
+        1. Add labels pada forms.py
+        2. Periksa hasilnya
+        3. Test it out
+        
+        modified:   README.md
+        modified:   users/forms.py

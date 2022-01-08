@@ -12,3 +12,5 @@ class CustomUserCreationForm(UserCreationForm):
 		fields = [
 			'first_name', 'email', 
 			'username', 'password1', 'password2']
+		# Replacing 'First Name' to 'Name'
+		labels = {'first_name': 'Name'}
