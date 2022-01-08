@@ -37,7 +37,6 @@ def project_single_view(request, pk):
     return render(request, 'projects/project_single.html', context)
     
 
-
 def project_create_view(request):
     
     # 1. Load ProjectForm class
@@ -64,7 +63,6 @@ def project_create_view(request):
 
     # Template
     return render(request, 'projects/project_form.html', context) # 5. Render context
-
 
 
 def project_update_view(request, pk):
@@ -99,7 +97,6 @@ def project_update_view(request, pk):
 
     # Template
     return render(request, 'projects/project_form.html', context) # 7. Render context
-
 
 
 

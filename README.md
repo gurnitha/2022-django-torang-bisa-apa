@@ -1488,3 +1488,22 @@ Oleh: I Nyoman Gurnitha
         modified:   templates/base.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 19.7 Restriction Part 1 - Sembunyikan laman login bagi user yg tlh login
+
+        Steps:
+
+        1. Gunakan is_authenticated method
+        2. Test it out to see the result
+
+        NOTE:
+
+        1. User yg telah login tidak bisa mengakses lagi laman login.
+        2. Bila mencoba mengaksesnya, user akan di-redirect ke laman user
+
+        DONE:)
+
+        modified:   README.md
+        modified:   projects/views.py
+        modified:   users/views.py
