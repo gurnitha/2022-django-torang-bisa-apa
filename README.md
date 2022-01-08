@@ -1529,3 +1529,20 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   projects/views.py
+
+
+#### 19.9 Restriction Part 3 - Menyembunyikan menu Add Project dari un-logged in user
+
+        Steps:
+
+        1. Pindahkan Add Project menu ke bagian kondisional
+        2. Periksa hasilnya
+
+        NOTE
+        1. Menu Add Project berhasil disembunyikan
+           saat user melakukan logout
+
+        NEXT> Flash messages
+
+        modified:   README.md
+        modified:   templates/base.html
