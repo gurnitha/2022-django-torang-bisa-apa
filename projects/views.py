@@ -2,6 +2,7 @@
 
 # Django modules
 from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
 
 # locals
 from .models import Project
@@ -37,6 +38,7 @@ def project_single_view(request, pk):
     return render(request, 'projects/project_single.html', context)
     
 
+@login_required(login_url="users:login")
 def project_create_view(request):
     
     # 1. Load ProjectForm class
@@ -65,6 +67,7 @@ def project_create_view(request):
     return render(request, 'projects/project_form.html', context) # 5. Render context
 
 
+@login_required(login_url="users:login")
 def project_update_view(request, pk):
 
     # 1. Get the project instance by its id
@@ -100,6 +103,7 @@ def project_update_view(request, pk):
 
 
 
+@login_required(login_url="users:login")
 def project_delete_view(request, pk):
 
     # 1. Get the project instance by its id

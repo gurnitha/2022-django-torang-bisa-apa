@@ -1507,3 +1507,25 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   projects/views.py
         modified:   users/views.py
+
+
+#### 19.8 Restriction Part 2 - Blocking user unt meng-akses laman project_create, project_update dan project_delete 
+
+        Steps:
+
+        1. Import login_required method
+        2. Add login_required pada project_create_view
+        3. Add login_required pada project_update_view
+        4. Add login_required pada project_delete_view
+        5. Test it out to see the result
+
+        NOTE:
+
+        1. User yg tdk login tidak bisa mengakses laman project_create
+        2. Bila user yg tdk login mencoba mengakses laman itu, maka
+           user akan diarahkan ke laman login.
+
+        NEXT > Menyembunyikan menu Add Project
+
+        modified:   README.md
+        modified:   projects/views.py
