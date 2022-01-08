@@ -1589,3 +1589,17 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/auth/register_login.html
+
+
+#### 19.13 REGISTER Part 3 - Menggunakan UserCreationForm
+
+        Steps:
+
+        1. Import UserCreationForm module
+        2. Gunakan UserCreationForm pada registerUser view
+        3. Gunakan instance dari UserCreationForm pada register form
+        4. Buka browser dan lihat hasilnya
+        
+        modified:   README.md
+        modified:   users/templates/users/auth/register_login.html
+        modified:   users/views.py
