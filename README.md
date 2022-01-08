@@ -1603,3 +1603,16 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/auth/register_login.html
         modified:   users/views.py
+
+
+#### 19.14 REGISTER Part 4 - Add logic to register a user
+
+        Steps:
+
+        1. Buat register logic pada method registerUser
+        2. Register user baru untuk menguji
+
+        NOTE:
+        1. A new was user successfully created.
+
+        modified:   users/views.py
