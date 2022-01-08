@@ -1688,3 +1688,16 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/register_login.html
+
+
+#### 19.20 REGISTER - LOGIN Part 3 - Add links pada login and register
+
+        Steps:
+
+        1. Buka register_login page dan add link
+        2. Buka browser, periksa hasilnya
+
+        NOTE: Links berfungsi
+
+        modified:   README.md
+        modified:   users/templates/users/auth/register_login.html
