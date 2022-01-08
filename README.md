@@ -1674,7 +1674,17 @@ Oleh: I Nyoman Gurnitha
 
         1. Buka register_login page dan add template theme
         2. Buka browser, periksa hasilnya
-        
+
+        modified:   README.md
+        modified:   users/templates/users/register_login.html
+
+
+#### 19.19 REGISTER - LOGIN Part 2 - Add kondisional memerlihatkan login atau register form
+
+        Steps:
+
+        1. Buka register_login page dan add kondisional
+        2. Buka browser, periksa hasilnya
 
         modified:   README.md
         modified:   users/templates/users/register_login.html
