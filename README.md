@@ -1417,3 +1417,14 @@ Oleh: I Nyoman Gurnitha
         new file:   users/templates/users/auth/register_login.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 19.2 Login Part 2 - Membuat basic form
+
+        Steps:
+
+        1. Add basic html form pada register_login
+        2. Periksa hasilnya
+        
+        modified:   README.md
+        modified:   users/templates/users/register_login.html
