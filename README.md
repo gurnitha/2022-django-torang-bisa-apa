@@ -1457,4 +1457,20 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/auth/register_login.html
         modified:   users/views.py
 
-        
+
+#### 19.5 Login Part 5 - Menampilkan menu logout bagi user yg telah log in
+
+        Steps:
+
+        1. Membuat kondisional
+        2. Test dan lihat hasilnya
+
+        modified:   README.md
+        modified:   templates/base.html
+
+        NOTE:
+
+        1. Menampilkan menu logout berhasil
+        2. User belum bisa log out
+        3. NEXT> Membuat user bisa logout 
+

@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container container--narrow">
             <a href="{% url 'projects:projects' %}" class="header__logo">
-            <img src="{% static 'images/tba-logo.jpg' %}" alt="DevSearch Logo" />
+            <img src="{% static 'images/logo.svg' %}" alt="DevSearch Logo" />
             </a>
             <nav class="header__nav">
                 <input type="checkbox" id="responsive-menu" />
@@ -34,8 +34,24 @@
                     <li class="header__menuItem"><a href="{% url 'projects:projects' %}">Projects</a></li>
                     <li class="header__menuItem"><a href="inbox.html">Inbox</a></li>
                     <li class="header__menuItem"><a href="account.html">My Account</a></li>
-                    <li class="header__menuItem"><a href="{% url 'projects:create_project' %}">Add Project</a></li>
-                    <li class="header__menuItem"><a href="{% url 'users:login' %}" class="btn btn--sub">Login/Sign Up</a></li>
+                    <li class="header__menuItem">
+                        <a href="{% url 'projects:create_project' %}">Add Project</a>
+                    </li>
+
+                    <!-- Showing log out menu to the logged in user -->
+                    {% if request.user.is_authenticated %}
+                    <li class="header__menuItem">
+                        <a href="{% url 'users:login' %}" 
+                            class="btn btn--sub">Log out</a>
+                    </li>
+                    <!-- Showing log in/sign up menu to the un-logged in user -->
+                    {% else %}
+                    <li class="header__menuItem">
+                        <a href="{% url 'users:login' %}" 
+                            class="btn btn--sub">Log in/Sign up</a>
+                    </li>
+                    {% endif %}
+
                 </ul>
             </nav>
         </div>
