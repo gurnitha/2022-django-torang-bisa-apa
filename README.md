@@ -1578,3 +1578,14 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 19.12 REGISTER Part 2 - Adding conditional pada register_login form
+
+        Steps:
+
+        1. Buka template register_login.html dan add kondisional
+        2. Tes hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/auth/register_login.html

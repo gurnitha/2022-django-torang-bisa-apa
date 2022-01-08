@@ -5,13 +5,25 @@
 
 	{% block content %}
 
-	<div style="width: 500px; height: 200px; 
-		margin: 0 auto; 
-		background-color: #ccc; 
-		margin-top: 100px; 
-		padding: 50px;">
+	{% if page == 'register' %}
 
-		<h1>Register-Login</h1>
+	<div style="margin-left: 200px;">
+
+		<h1>Register User</h1>
+
+		<p>Already have account?
+			<a href="{% url 'users:login' %}">Log in</a>
+		</p>
+
+	</div>
+	
+	{% else %}
+	
+	<br><br>
+
+	<div style="margin-left: 200px;">
+		
+		<h1>Log in</h1>
 
 		<form 
 			method="POST" 
@@ -33,7 +45,13 @@
 				type="submit" 
 				name=""
 				value="Login">
+
+			<p>Don't have account yet?
+				<a href="{% url 'users:register' %}">Sign up</a>
+			</p>
 		</form>
 	</div>
+
+	{% endif %}
 
 	{% endblock content %}
