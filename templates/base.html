@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container container--narrow">
             <a href="{% url 'projects:projects' %}" class="header__logo">
-            <img src="{% static 'images/logo.svg' %}" alt="DevSearch Logo" />
+            <img src="{% static 'images/tba-logo.jpg' %}" alt="DevSearch Logo" />
             </a>
             <nav class="header__nav">
                 <input type="checkbox" id="responsive-menu" />
@@ -41,7 +41,7 @@
                     <!-- Showing log out menu to the logged in user -->
                     {% if request.user.is_authenticated %}
                     <li class="header__menuItem">
-                        <a href="{% url 'users:login' %}" 
+                        <a href="{% url 'users:logout' %}" 
                             class="btn btn--sub">Log out</a>
                     </li>
                     <!-- Showing log in/sign up menu to the un-logged in user -->

@@ -2,7 +2,7 @@
 
 # Django modules
 from django.shortcuts import render, redirect
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 
 # Locals
@@ -54,6 +54,14 @@ def loginUser(request):
 	
 	return render(request, 'users/auth/register_login.html')
 
+
+# logoutUser view
+def logoutUser(request):
+	# Kill the session using the logout method
+	# and redirect user to login page
+	logout(request)
+	return redirect('users:login')
+	
 # -------------------END Authentication ---------------
 
 

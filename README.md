@@ -1474,3 +1474,17 @@ Oleh: I Nyoman Gurnitha
         2. User belum bisa log out
         3. NEXT> Membuat user bisa logout 
 
+
+#### 19.6 Logout - Membuat logout functionality
+
+        Steps:
+
+        1. Import logout method
+        2. Buat logoutUser view method
+        3. Buath path untuk logout
+        4. Tambahkan link logout pada menu
+        5. Coba dan periksa hasilnya
+
+        modified:   templates/base.html
+        modified:   users/urls.py
+        modified:   users/views.py
