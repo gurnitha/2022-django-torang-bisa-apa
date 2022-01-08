@@ -1325,3 +1325,20 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/models.py
+
+
+#### 22.3  Django signals - User profile akan terbuat secara otomatis bila user baru dibuat
+
+        Steps:
+
+        1. Import receiver, post_save and post_delete dari signals
+        2. Buat method
+        3. Test dan lihat hasilnya
+
+        modified:   README.md
+        modified:   users/models.py
+
+        NOTE:
+        1. User dibuat, profile terbuat
+        2. User dihapus, profile terhapus
+        3. Profile dihapus, user tidak terhapus
