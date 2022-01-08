@@ -1396,3 +1396,24 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/apps.py
         modified:   users/signals.py
+
+
+
+### 23. AUTHENTICATION: REGISTER, LOGIN DAN LOGOUT
+--------------------------------------------------
+
+#### 19.1 Login Part 1 - template, view dan urls
+
+        Steps:
+
+        1. Buat folder dan file baru: auth/register_login.html file
+        2. Buat template
+        3. Buat login view
+        4. Buat path
+        5. Buat link pada menu
+        
+        modified:   README.md
+        modified:   templates/base.html
+        new file:   users/templates/users/auth/register_login.html
+        modified:   users/urls.py
+        modified:   users/views.py

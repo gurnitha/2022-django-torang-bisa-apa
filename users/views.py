@@ -9,6 +9,16 @@ from projects.models import Tag
 
 # Create your views here.
 
+# -------------------Authentication -------------------
+
+# loginUser view
+def loginUser(request):
+	return render(request, 'users/auth/register_login.html')
+
+# -------------------END Authentication ---------------
+
+
+
 # Profile view
 def profile_view(request):
 
