@@ -1701,3 +1701,31 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/auth/register_login.html
+
+
+#### 19.21 REGISTER - LOGIN Part 4 - Include header dan modifikasi home url
+
+        Steps:
+
+        1. Buat file baru: templates/shared/header.html
+        2. Pindahkan header dari base.html ke header.html
+        3. Include header pada base.html
+        4. Buka users/urls.py lakukan modifikasi home url dan profile url:
+           -- home url
+           dari   : http://127.0.0.1:8000/users/
+           menjadi: http://127.0.0.1:8000
+           -- profile url
+           dari   : http://127.0.0.1:8000/user/profile/e8146636-b6ae-451e-bc46-4b9b51adfffe/
+           menjadi: http://127.0.0.1:8000/profile/e8146636-b6ae-451e-bc46-4b9b51adfffe/
+        5. Periksa hasilnya
+
+        NOTE: 
+
+        1. Include working
+        2. Modifikasi working
+
+        modified:   README.md
+        modified:   templates/base.html
+        new file:   templates/shared/header.html
+        deleted:    templates/shared/navbar.html
+        modified:   users/urls.py

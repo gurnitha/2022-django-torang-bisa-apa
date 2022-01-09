@@ -18,52 +18,7 @@
 <body>
 
     <!-- Header Section -->
-    <header class="header">
-        <div class="container container--narrow">
-            <a href="{% url 'projects:projects' %}" class="header__logo">
-            <img src="{% static 'images/tba-logo.jpg' %}" alt="DevSearch Logo" />
-            </a>
-            <nav class="header__nav">
-                <input type="checkbox" id="responsive-menu" />
-                <label for="responsive-menu" class="toggle-menu">
-                    <span>Menu</span>
-                    <div class="toggle-menu__lines"></div>
-                </label>
-                <ul class="header__menu">
-                    <li class="header__menuItem"><a href="{% url 'users:profiles' %}">Developers</a></li>
-                    <li class="header__menuItem"><a href="{% url 'projects:projects' %}">Projects</a></li>
-                    <li class="header__menuItem"><a href="inbox.html">Inbox</a></li>
-                    <li class="header__menuItem"><a href="account.html">My Account</a></li>
-                    
-
-                    <!-- Showing log out menu to the logged in user -->
-                    {% if request.user.is_authenticated %}
-                    
-                    <!-- Add project -->
-                    <li class="header__menuItem">
-                        <a href="{% url 'projects:create_project' %}">Add Project</a>
-                    </li>
-
-                    <!-- Log out -->
-                    <li class="header__menuItem">
-                        <a href="{% url 'users:logout' %}" 
-                            class="btn btn--sub">Log out</a>
-                    </li>
-
-                    <!-- Showing log in/sign up menu to the un-logged in user -->
-                    {% else %}
-
-                    <!-- Login/Sign up -->
-                    <li class="header__menuItem">
-                        <a href="{% url 'users:login' %}" 
-                            class="btn btn--sub">Log in/Sign up</a>
-                    </li>
-                    {% endif %}
-
-                </ul>
-            </nav>
-        </div>
-    </header>
+    {% include 'shared/header.html' %}
     <!-- END Header Section -->
     
     <!-- Flash Messages -->
