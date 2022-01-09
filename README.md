@@ -1755,3 +1755,14 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/auth/register_login.html
+
+
+#### 19.24 REGISTER - LOGIN Part 7 - Looping the form field Part 1
+
+        Steps:
+
+        1. Buka dan modifikasi register_login.html
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/register_login.html
