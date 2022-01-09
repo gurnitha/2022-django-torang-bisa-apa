@@ -1799,3 +1799,22 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/auth/register_login.html
+
+
+#### 19.28 REGISTER - LOGIN Part 11 - Add style pada flash messages
+
+        Steps:
+
+        1. Buka dan modifikasi base.html
+        2. Buka dan modifikasi logoutUser view
+        3. Periksa hasilnya
+
+        NOTE:
+
+        Style alert berhasil, tapi tidak bisa dihilangkan
+
+        NEXT> Menghilangkan alert
+
+        modified:   README.md
+        modified:   templates/base.html
+        modified:   users/views.py

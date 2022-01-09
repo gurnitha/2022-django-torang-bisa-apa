@@ -123,7 +123,8 @@ def logoutUser(request):
 	# Kill the session using the logout method
 	# and redirect user to login page
 	logout(request)
-	messages.error(request, 'User was logged out!')
+	# messages.error(request, 'User was logged out!')
+	messages.info(request, 'Your are logged out!')
 	return redirect('users:login')
 	
 # -------------------END Authentication ---------------

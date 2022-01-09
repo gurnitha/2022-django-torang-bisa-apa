@@ -22,7 +22,8 @@
     <!-- END Header Section -->
     
     <!-- Flash Messages -->
-    {% if messages %}
+
+    <!-- {% if messages %}
     <ul class="messages">
         {% for message in messages %}
         <li style="color:red;"
@@ -31,7 +32,19 @@
             {% endif %}>{{ message }}</li>
         {% endfor %}
     </ul>
-    {% endif %}
+    {% endif %} -->
+
+    <!-- END Flash Messages -->
+
+    <!-- Flash Messages -->
+    {% for message in messages %}
+    
+    <div class="alert  alert--{{message.tags}}">
+        <p class="alert__message">{{message}}</p>
+        <button class="alert__close">x</button>
+    </div>
+
+    {% endfor %}
     <!-- END Flash Messages -->
 	
 	<!-- Content -->
