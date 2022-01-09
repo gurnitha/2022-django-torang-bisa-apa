@@ -1861,3 +1861,16 @@ Oleh: I Nyoman Gurnitha
         new file:   users/templates/users/account.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 24.2 Menyembunyikan My Account menu dari un-logged in user
+
+        Steps:
+
+        1. Buat file: templates/shared/header.html dan
+           pindahkan menu My Account
+        2. Test it out login :)
+        3. Test it out logout :)
+
+        modified:   README.md
+        modified:   templates/shared/header.html
