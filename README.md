@@ -1744,3 +1744,14 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/auth/register_login.html
+
+
+#### 19.23 REGISTER - LOGIN Part 6 - Modifikasi register_login.html
+
+        Steps:
+
+        1. Buka dan modifikasi register_login.html
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/auth/register_login.html
