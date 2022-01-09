@@ -1402,7 +1402,7 @@ Oleh: I Nyoman Gurnitha
 ### 23. AUTHENTICATION: REGISTER, LOGIN DAN LOGOUT
 --------------------------------------------------
 
-#### 19.1 Login Part 1 - template, view dan urls
+#### 23.1 Login Part 1 - template, view dan urls
 
         Steps:
 
@@ -1419,7 +1419,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.2 Login Part 2 - Membuat basic form
+#### 23.2 Login Part 2 - Membuat basic form
 
         Steps:
 
@@ -1430,7 +1430,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/register_login.html
 
 
-#### 19.3 Login Part 3 - Membuat basic logic page userLogin view
+#### 23.3 Login Part 3 - Membuat basic logic page userLogin view
 
         Steps:
 
@@ -1442,7 +1442,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.4 Login Part 4 - Membuat authentication logic
+#### 23.4 Login Part 4 - Membuat authentication logic
 
         Steps:
 
@@ -1458,7 +1458,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.5 Login Part 5 - Menampilkan menu logout bagi user yg telah log in
+#### 23.5 Login Part 5 - Menampilkan menu logout bagi user yg telah log in
 
         Steps:
 
@@ -1475,7 +1475,7 @@ Oleh: I Nyoman Gurnitha
         3. NEXT> Membuat user bisa logout 
 
 
-#### 19.6 Logout - Membuat logout functionality
+#### 23.6 Logout - Membuat logout functionality
 
         Steps:
 
@@ -1490,7 +1490,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.7 Restriction Part 1 - Sembunyikan laman login bagi user yg tlh login
+#### 23.7 Restriction Part 1 - Sembunyikan laman login bagi user yg tlh login
 
         Steps:
 
@@ -1509,7 +1509,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.8 Restriction Part 2 - Blocking user unt meng-akses laman project_create, project_update dan project_delete 
+#### 23.8 Restriction Part 2 - Blocking user unt meng-akses laman project_create, project_update dan project_delete 
 
         Steps:
 
@@ -1531,7 +1531,7 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/views.py
 
 
-#### 19.9 Restriction Part 3 - Menyembunyikan menu Add Project dari un-logged in user
+#### 23.9 Restriction Part 3 - Menyembunyikan menu Add Project dari un-logged in user
 
         Steps:
 
@@ -1548,7 +1548,7 @@ Oleh: I Nyoman Gurnitha
         modified:   templates/base.html
 
 
-#### 19.10 MESSAGES - Adding flash error message to login dan logout
+#### 23.10 MESSAGES - Adding flash error message to login dan logout
 
         Steps:
 
@@ -1567,7 +1567,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.11 REGISTER Part 1 - Create View dan Urls
+#### 23.11 REGISTER Part 1 - Create View dan Urls
 
         Steps:
 
@@ -1580,7 +1580,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.12 REGISTER Part 2 - Adding conditional pada register_login form
+#### 23.12 REGISTER Part 2 - Adding conditional pada register_login form
 
         Steps:
 
@@ -1591,7 +1591,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/auth/register_login.html
 
 
-#### 19.13 REGISTER Part 3 - Menggunakan UserCreationForm
+#### 23.13 REGISTER Part 3 - Menggunakan UserCreationForm
 
         Steps:
 
@@ -1605,7 +1605,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.14 REGISTER Part 4 - Add logic to register a user
+#### 23.14 REGISTER Part 4 - Add logic to register a user
 
         Steps:
 
@@ -1618,7 +1618,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.15 REGISTER Part 5 - Authomatically login user after Signing up
+#### 23.15 REGISTER Part 5 - Authomatically login user after Signing up
 
         Steps:
 
@@ -1636,7 +1636,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.16 REGISTER Part 6 - Membuat CustomUserCreationForm
+#### 23.16 REGISTER Part 6 - Membuat CustomUserCreationForm
 
         Steps:
 
@@ -1656,7 +1656,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.17 REGISTER Part 7 - Change reg form field from 'First name' to 'Name'
+#### 23.17 REGISTER Part 7 - Change reg form field from 'First name' to 'Name'
 
         Steps:
 
@@ -1668,7 +1668,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/forms.py
 
 
-#### 19.18 REGISTER - LOGIN Part 1 - Add template theme
+#### 23.18 REGISTER - LOGIN Part 1 - Add template theme
 
         Steps:
 
@@ -1679,7 +1679,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/register_login.html
 
 
-#### 19.19 REGISTER - LOGIN Part 2 - Add kondisional memerlihatkan login atau register form
+#### 23.19 REGISTER - LOGIN Part 2 - Add kondisional memerlihatkan login atau register form
 
         Steps:
 
@@ -1690,7 +1690,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/register_login.html
 
 
-#### 19.20 REGISTER - LOGIN Part 3 - Add links pada login and register
+#### 23.20 REGISTER - LOGIN Part 3 - Add links pada login and register
 
         Steps:
 
@@ -1703,7 +1703,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/auth/register_login.html
 
 
-#### 19.21 REGISTER - LOGIN Part 4 - Include header dan modifikasi home url
+#### 23.21 REGISTER - LOGIN Part 4 - Include header dan modifikasi home url
 
         Steps:
 
@@ -1731,7 +1731,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/urls.py
 
 
-#### 19.22 REGISTER - LOGIN Part 5 - Add functionality pada login form
+#### 23.22 REGISTER - LOGIN Part 5 - Add functionality pada login form
 
         Steps:
 
@@ -1746,7 +1746,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/auth/register_login.html
 
 
-#### 19.23 REGISTER - LOGIN Part 6 - Modifikasi register_login.html
+#### 23.23 REGISTER - LOGIN Part 6 - Modifikasi register_login.html
 
         Steps:
 
@@ -1757,7 +1757,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/auth/register_login.html
 
 
-#### 19.24 REGISTER - LOGIN Part 7 - Looping the form field Part 1
+#### 23.24 REGISTER - LOGIN Part 7 - Looping the form field Part 1
 
         Steps:
 
@@ -1768,7 +1768,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/register_login.html
 
 
-#### 19.25 REGISTER - LOGIN Part 8 - Looping the form field Part 2 (rendering label dan input field)
+#### 23.25 REGISTER - LOGIN Part 8 - Looping the form field Part 2 (rendering label dan input field)
 
         Steps:
 
@@ -1779,7 +1779,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/register_login.html
 
 
-#### 19.26 REGISTER - LOGIN Part 9 - Styling forms.py
+#### 23.26 REGISTER - LOGIN Part 9 - Styling forms.py
 
         Steps:
 
@@ -1790,7 +1790,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/forms.py
 
 
-#### 19.27 REGISTER - LOGIN Part 10 - Memperlihatkan pesan/alert error pada register_login.html
+#### 23.27 REGISTER - LOGIN Part 10 - Memperlihatkan pesan/alert error pada register_login.html
 
         Steps:
 
@@ -1801,7 +1801,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/auth/register_login.html
 
 
-#### 19.28 REGISTER - LOGIN Part 11 - Add style pada flash messages
+#### 23.28 REGISTER - LOGIN Part 11 - Add style pada flash messages
 
         Steps:
 
@@ -1820,7 +1820,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 19.29 REGISTER - LOGIN Part 12 - Removing the flash message
+#### 23.29 REGISTER - LOGIN Part 12 - Removing the flash message
 
         Steps:
 
@@ -1834,3 +1834,9 @@ Oleh: I Nyoman Gurnitha
 
         modified:   static/uikit/app.js
         modified:   templates/base.html
+
+
+#### 23.30 House keeping: Modifikasi README.md file
+
+        modified:   README.md
+
