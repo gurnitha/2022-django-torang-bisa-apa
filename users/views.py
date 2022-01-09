@@ -170,5 +170,14 @@ def profile_user_view(request, pk):
 
 # Account user view
 def account_user_view(request):
-	context = {}
+	profile = request.user.profile
+	skills = profile.skill_set.all()
+	# projects = profile.project_set.all()
+	projects = profile.project_set.all()
+	# print(projects)
+	context = {
+		'profile':profile,
+		'skills':skills,
+		'projects':projects
+	}
 	return render(request, 'users/account.html', context)

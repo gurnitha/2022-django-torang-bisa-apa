@@ -1886,3 +1886,34 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/account.html
+
+
+#### 21.4 Loading user information
+
+        Steps:
+
+        1. Load data pada account_user_view
+        2. Display data pada laman account
+        3. Display owner name pada laman project_single
+        4. Ubah link pada laman projects
+        5. Test create a new project
+
+        modified:   README.md
+        modified:   projects/templates/projects/project_single.html
+        modified:   projects/templates/projects/projects.html
+        modified:   users/templates/users/account.html
+        modified:   users/views.py
+
+        Steps membuat proyek baru:
+        --------------------------
+
+        1. Login
+        2. Buat proyek baru
+
+        NOTE:
+
+        1. Proyek baru bisa dibuat
+        2. Tapi nama owner tidak muncul
+        3. Nama owner harus diisi secara 
+           manual melalu admin panel oleh superuser
+           
