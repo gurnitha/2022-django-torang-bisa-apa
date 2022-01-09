@@ -1766,3 +1766,14 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/register_login.html
+
+
+#### 19.25 REGISTER - LOGIN Part 8 - Looping the form field Part 2 (rendering label dan input field)
+
+        Steps:
+
+        1. Buka dan modifikasi register_login.html
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/register_login.html
