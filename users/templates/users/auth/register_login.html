@@ -4,9 +4,9 @@
 
 {% block title %}Register-Login{% endblock title %}
 
-	{% block content %}
+    {% block content %}
 
-	{% if page == 'register' %}
+    {% if page == 'register' %}
     <!-- =================== Register ======================= -->
     <div class="auth">
         <div class="card">
@@ -79,6 +79,8 @@
     <!-- =================== Login ======================= -->
     <div class="auth">
         <div class="card">
+
+            <!-- Header -->
             <div class="auth__header text-center">
                 <a href="/">
                 <img src="{% static 'images/tba-logo-login.jpg' %}" alt="icon" />
@@ -86,7 +88,16 @@
                 <h3>Account Login</h3>
                 <p>Hello Developer, Welcome Back!</p>
             </div>
-            <form action="#" class="form auth__form">
+            <!-- END Header -->
+
+            <!-- Form -->
+            <form 
+                action="{% url 'users:login' %}"
+                method="POST" 
+                class="form auth__form">
+
+                {% csrf_token %}
+                
                 <!-- Input:Email -->
                 <div class="form__field">
                     <label for="formInput#text">Username: </label>
@@ -114,14 +125,19 @@
                     <a href="forgetpassword.html">Forget Password?</a>
                 </div>
             </form>
+            <!-- END Form -->
+
+            <!-- link to sign up -->
             <div class="auth__alternative">
                 <p>Don’t have an Account?</p>
                 <a href="{% url 'users:register' %}">Sign Up</a>
             </div>
+            <!-- link to sign up -->
+
         </div>
     </div>
     <!-- =================== END Login ======================= -->
 
-	{% endif %}
+    {% endif %}
 
-	{% endblock content %}
+    {% endblock content %}

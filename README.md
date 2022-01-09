@@ -1729,3 +1729,18 @@ Oleh: I Nyoman Gurnitha
         new file:   templates/shared/header.html
         deleted:    templates/shared/navbar.html
         modified:   users/urls.py
+
+
+#### 19.22 REGISTER - LOGIN Part 5 - Add functionality pada login form
+
+        Steps:
+
+        1. Buka file auth/register_login.html dan modifikasi codes
+        5. Periksa hasilnya
+
+        NOTE: 
+
+        1. Login working
+
+        modified:   README.md
+        modified:   users/templates/users/auth/register_login.html
