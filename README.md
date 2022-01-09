@@ -1840,3 +1840,24 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
 
+
+
+### 24. USER ACTIONS
+--------------------
+
+#### 24.1 Membuat laman account - template, view, urls + link pada navbar
+
+        Steps:
+
+        1. Buat file baru: users/account.html
+        2. Isi basic template
+        3. Buat view method: account_user_view
+        4. Buat path account
+        5. Buat link pada navbar
+        6. Test it out :)
+
+        modified:   README.md
+        modified:   templates/shared/header.html
+        new file:   users/templates/users/account.html
+        modified:   users/urls.py
+        modified:   users/views.py

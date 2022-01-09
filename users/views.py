@@ -166,3 +166,9 @@ def profile_user_view(request, pk):
 	}
 	
 	return render(request, 'users/profile_user.html', context)
+
+
+# Account user view
+def account_user_view(request):
+	context = {}
+	return render(request, 'users/account.html', context)

@@ -10,6 +10,9 @@ from . import views
 app_name = 'users'
 
 urlpatterns = [
+
+    # Account
+    path('account/', views.account_user_view, name='account'),
     
     # Authentication
     path('login/', views.loginUser, name='login'),
@@ -19,6 +22,4 @@ urlpatterns = [
     path('', views.profile_view, name='profiles'),
     path('profile/<str:pk>/', views.profile_user_view, name='profile_user'),
 
-    # path('users/', views.profile_view, name='profiles'),
-    # path('user/profile/<str:pk>/', views.profile_user_view, name='profile_user'),
 ]
