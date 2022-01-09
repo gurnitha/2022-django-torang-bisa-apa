@@ -1818,3 +1818,19 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   templates/base.html
         modified:   users/views.py
+
+
+#### 19.29 REGISTER - LOGIN Part 12 - Removing the flash message
+
+        Steps:
+
+        1. Buka dan modifikasi base.html
+        2. Buka dan modifikasi static/uikit/app.js
+        3. Periksa hasilnya
+
+        NOTE:
+
+        Alert berhasil dihilangkan :)
+
+        modified:   static/uikit/app.js
+        modified:   templates/base.html
