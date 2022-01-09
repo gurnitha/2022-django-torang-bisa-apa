@@ -1874,3 +1874,15 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   templates/shared/header.html
+
+
+#### 24.3 Add template theme pada laman account
+
+        Steps:
+
+        1. Buka file: users/templates/users/account.html
+           dan add theme
+        2. Test it :)
+
+        modified:   README.md
+        modified:   users/templates/users/account.html
