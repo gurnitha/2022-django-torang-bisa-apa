@@ -1777,3 +1777,14 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/register_login.html
+
+
+#### 19.26 REGISTER - LOGIN Part 9 - Styling forms.py
+
+        Steps:
+
+        1. Buka dan modifikasi users/forms/py
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/forms.py
