@@ -181,3 +181,9 @@ def account_user_view(request):
 		'projects':projects
 	}
 	return render(request, 'users/account.html', context)
+
+
+# editAccount view
+def account_user_edit_view(request):
+	context = {}
+	return render(request, 'users/profile_form.html', context)

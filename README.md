@@ -1916,4 +1916,21 @@ Oleh: I Nyoman Gurnitha
         2. Tapi nama owner tidak muncul
         3. Nama owner harus diisi secara 
            manual melalu admin panel oleh superuser
-           
+
+
+#### 21.5 Membuat laman edit accout - Template, View dan Urls
+
+        Steps:
+
+        1. Modifikasi laman projects dengan menghapus bagian file
+        2. Buat file baru: users/templates/users/profile_form.html
+        3. Isi basic template pada file baru tersebut
+        4. Buat view function
+        5. Buat path
+        6. Test it out :)
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        new file:   users/templates/users/profile_form.html
+        modified:   users/urls.py
+        modified:   users/views.py
