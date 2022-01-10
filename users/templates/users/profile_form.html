@@ -14,7 +14,9 @@
 
 		<form 
 			action="{% url 'users:account_edit' %}" 
-			method="POST">
+			method="POST"
+			enctype="multipart/form-data">
+			
 			{% csrf_token %}
 
 			{{form.as_p}}

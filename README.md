@@ -2015,3 +2015,23 @@ Oleh: I Nyoman Gurnitha
         modified:   users/forms.py
         new file:   users/migrations/0005_profile_social_stackoverflow.py
         modified:   users/models.py
+
+
+#### 24.11 Membuat profile_form berfungsi
+
+        Steps:
+
+        1. Update profile_form
+        2. Buat logic pada account_user_edit_view
+        3. Periksa hasilnya
+        4. Test it out :)
+
+        NOTE:
+
+        1. profile_form berfungsi.
+        1.1 Berhasil melakukan update profile
+        1.2 Berhasil melakukan update username pada db
+
+        modified:   README.md
+        modified:   users/templates/users/profile_form.html
+        modified:   users/views.py
