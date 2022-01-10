@@ -6,17 +6,23 @@
 
 	{% block content %}
 
-	<h1>Edit Account</h1>
+	<div style="width:500px;  
+		margin: 0 auto; background: #ccc; 
+		padding: 50px; margin-top: 50px;">
 
-	<form 
-		action="{% url 'users:account_edit' %}" 
-		method="POST">
-		{% csrf_token %}
+		<h1>Edit Account</h1>
 
-		<input 
-			type="submit" 
-			name="" 
-			value="Submit">
-	</form>
+		<form 
+			action="{% url 'users:account_edit' %}" 
+			method="POST">
+			{% csrf_token %}
 
+			{{form.as_p}}
+
+			<input 
+				type="submit" 
+				name="" 
+				value="Submit">
+		</form>
+	</div>
 	{% endblock content %}

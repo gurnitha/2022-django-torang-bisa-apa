@@ -10,7 +10,7 @@ from django.contrib import messages
 # Locals
 from . models import Profile, Skill
 from projects.models import Tag 
-from . forms import CustomUserCreationForm
+from . forms import CustomUserCreationForm, ProfileForm
 
 # Create your views here.
 
@@ -185,5 +185,11 @@ def account_user_view(request):
 
 # editAccount view
 def account_user_edit_view(request):
-	context = {}
+
+	form = ProfileForm
+
+	context = {
+		'form':form
+	}
+	
 	return render(request, 'users/profile_form.html', context)

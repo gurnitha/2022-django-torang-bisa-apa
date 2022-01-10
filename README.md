@@ -1953,3 +1953,18 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
 
+
+#### 24.8 Menambahkan form fields pada profile_form
+
+        Steps:
+
+        1. Import model Profile dan buat class ProfileForm pada users/forms.py
+        2. Import dan load ProfileForm pada views.py
+        3. Display instance ProfileForm pada profile_form + style
+        4. Test it out :)
+
+        modified:   README.md
+        modified:   users/forms.py
+        modified:   users/templates/users/profile_form.html
+        modified:   users/views.py
+
