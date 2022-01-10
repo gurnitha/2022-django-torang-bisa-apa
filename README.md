@@ -1968,3 +1968,31 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/profile_form.html
         modified:   users/views.py
 
+
+#### 24.9 Membuat updateUser signals untuk mengupdate profile dan src otomatis mengupdate user, tetapi TIDAK sebaliknya
+
+        Steps:
+
+        1. Buka file users/signals.py dan buat method updateUser
+        2. Menghapus profile: lihat laman users dan tentukan 
+           profile yg akan dihapus, terutama profile yg tdk lengkap
+        3. Menghapus profile: Go to admin panel dan hapus profile
+           user yg sdh ditentukan pada poin 2.
+        4. Pada admin panel: testing update satu atau dua profile
+        5. Pada admin panel, buka user yg profilenya baru diupdate
+
+        NOTE:
+
+        1. Meng-update profile pada admin, maka data user scr
+           otomatis akan ter-update.
+        2. Tapi meng-update user melalui Users (admin), hal
+           itu tdk meng-update profile user.
+
+        Apa artinya hal itu?
+
+        Itu berarti bahwa jika user meng-update profilenya
+        melalu laman web, maka data user pada db jg
+        akan ter-update scr otomatis.
+
+        modified:   README.md
+        modified:   users/signals.py

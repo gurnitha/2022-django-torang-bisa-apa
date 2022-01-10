@@ -36,6 +36,19 @@ def createProfile(sender, instance, created, **kwargs):
             name = new_user.first_name 
         )
 
+'''Any time a user update its profile, it will update the user as well'''
+def updateUser(sender, instance, created, **kwargs):
+    profile = instance
+    user = profile.user 
+
+    # Ignore if the instance was the first instance created
+    if created == False:
+        # Get the new instace and save it
+        user.first_name = profile.name
+        user.username = profile.username
+        user.email = profile.email 
+        user.save()
+
 
 '''Anytime delete a profile, it aslo delete the user'''
 def deleteUser(sender, instance, **kwargs):
@@ -47,4 +60,5 @@ def deleteUser(sender, instance, **kwargs):
     user.delete()
 
 post_save.connect(createProfile, sender=User)
+post_save.connect(updateUser, sender=Profile)
 post_delete.connect(deleteUser, sender=Profile)
