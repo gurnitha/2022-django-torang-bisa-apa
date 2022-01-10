@@ -1996,3 +1996,22 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/signals.py
+
+
+#### 24.10 Membatasi fields yg ditampilkan pada profile_form
+
+        Steps:
+
+        1. Menambah field baru 'social_stackoverflow' pd model Profile + migrasi
+        2. Pada users/forms.py tentukan fields yang akan ditampilkan
+        3. Periksa hasilnya
+
+        NOTE:
+
+        Pada tahap ini form belum bisa difungsikan karena
+        belum ada logicnya pada account_user_edit_view.
+
+        modified:   README.md
+        modified:   users/forms.py
+        new file:   users/migrations/0005_profile_social_stackoverflow.py
+        modified:   users/models.py
