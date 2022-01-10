@@ -1888,7 +1888,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/account.html
 
 
-#### 21.4 Loading user information
+#### 24.4 Loading user information
 
         Steps:
 
@@ -1918,7 +1918,7 @@ Oleh: I Nyoman Gurnitha
            manual melalu admin panel oleh superuser
 
 
-#### 21.5 Membuat laman edit accout - Template, View dan Urls
+#### 24.5 Membuat laman edit accout - Template, View dan Urls
 
         Steps:
 
@@ -1936,7 +1936,7 @@ Oleh: I Nyoman Gurnitha
         modified:   users/views.py
 
 
-#### 21.5 Menambahkan basic form pada laman profile_form
+#### 24.6 Menambahkan basic form pada laman profile_form
 
         Steps:
 
@@ -1947,3 +1947,9 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/account.html
         modified:   users/templates/users/profile_form.html
+
+
+#### 24.7 House keeping - Merubah nama message pada git repositori
+
+        modified:   README.md
+
