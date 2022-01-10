@@ -1934,3 +1934,16 @@ Oleh: I Nyoman Gurnitha
         new file:   users/templates/users/profile_form.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 21.5 Menambahkan basic form pada laman profile_form
+
+        Steps:
+
+        1. Mentautkan laman account dan profile_form
+        2. Menambahkan basic form pada profile_form
+        3. Test it out :)
+
+        modified:   README.md
+        modified:   users/templates/users/account.html
+        modified:   users/templates/users/profile_form.html
