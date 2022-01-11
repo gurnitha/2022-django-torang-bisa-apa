@@ -2129,3 +2129,26 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         new file:   static/images/profiles/darling.PNG
         new file:   static/images/samsung-tv-ua65t.PNG
+
+
+
+### 26. CRUD USER-BASED SKILL
+-----------------------------
+
+
+#### 26.1 CRUD - CREATE Part 1: Membuat skill_form Template, View dan Urls
+
+        Steps:
+
+        1. Membuat file baru: users/templates/users/skill_form.html
+        2. Membuat basic template untuk skill_form
+        3. Membuat view method: skill_create_view
+        4. Membuat path
+        5. Mentautkan skill_form dan laman account
+        6. Test it out :)
+
+        modified:   README.md
+        modified:   users/templates/users/account.html
+        new file:   users/templates/users/skill_form.html
+        modified:   users/urls.py
+        modified:   users/views.py

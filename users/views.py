@@ -213,3 +213,17 @@ def account_user_edit_view(request):
 	}
 	
 	return render(request, 'users/profile_form.html', context)
+
+
+
+# ---------------------------CRUD SKILL-----------------------
+
+# createSkill view
+def skill_create_view(request):
+    
+    context = {}
+    
+    return render(request, 'users/skill_form.html', context)
+
+
+# ------------------------END CRUD SKILL----------------------

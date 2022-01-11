@@ -23,4 +23,7 @@ urlpatterns = [
     path('', views.profile_view, name='profiles'),
     path('profile/<str:pk>/', views.profile_user_view, name='profile_user'),
 
+    # Skill
+    path('create-skill/', views.skill_create_view, name='skill_create'),
 ]
+
