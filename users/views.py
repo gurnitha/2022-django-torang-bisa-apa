@@ -221,15 +221,49 @@ def account_user_edit_view(request):
 # createSkill view
 def skill_create_view(request):
 
-    # 1. Load SkillForm model yang diimport dari users/forms.py.
+    '''
+    1. Agar bisa membuat skill, user HARUS:
+       - Sign up dan login
+       - Kemudian dapatkan data profile dari user tsb.'''
+    profile = request.user.profile
+
+    # 2. Load SkillForm model yang diimport dari users/forms.py.
     form = SkillForm()
-	
-    # 2. Tempatkan semua fields dari form ke dalam Context dictionary
+
+    # 3. Jika ada request dgn method POST, proses formnya.
+    if request.method == "POST":
+
+        # # Tesing the form: isi form lalu submit
+        # print(request.POST) # tested :)
+
+        ''' 
+        4. Instantiate the SkillForm model dengan 
+           parameter request.POST'''
+        form = SkillForm(request.POST)
+
+        # 5. Pastikan semua input pada form adalah valid.
+        if form.is_valid():
+            '''
+            6. Ambil semua data dari form,
+               tapi jangan langsung disimpan ke dalam db.'''
+            skill = form.save(commit=False)
+            '''
+            7. Update data owner dari profile.
+               Data itu mempunya hub OneToMany dgn skill.'''
+            skill.owner = profile
+            # 8. Lalu save data proyek ke dalam db.
+            skill.save()
+            # 9. Arahkan user ke laman account
+            return redirect('users:account')  
+
+    # 10. Tempatkan semua data dari skill_form ke dalam Context dictionary
     context = {
     	'form':form
     }
 
-    
+    '''
+    11. Sertakan context dictionary pada template 
+        agar data dari skill_form bisa ditampilan pada laman web.'''   
     return render(request, 'users/skill_form.html', context)
 
 

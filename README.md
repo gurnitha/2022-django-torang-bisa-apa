@@ -2178,3 +2178,14 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/skill_form.html
+
+
+#### 26.4 CRUD - CREATE Part 3: Add logic pada method skill_create_view agar user bisa membuat skill dari skill_form
+
+        Steps:
+
+        1. Buat logic untuk membuat skill
+        2. Test it out dan periksa hasilnya :)
+
+        modified:   README.md
+        modified:   users/views.py
