@@ -2096,7 +2096,18 @@ Oleh: I Nyoman Gurnitha
 
         1. Update project_update_view method
         2. Test it out dan periksa hasilnya
-        
+
         modified:   README.md
         modified:   projects/views.py
         new file:   static/images/PYTHON.png
+
+
+#### 25.4 CRUD - DELETE :   Menambahkan logic pada project_delete_view untuk memungkinkan spesifik user menghapus proyeknya
+
+        Steps:
+
+        1. Update project_delete_view method
+        2. Test it out dan periksa hasilnya :)
+        
+        modified:   README.md
+        modified:   projects/views.py

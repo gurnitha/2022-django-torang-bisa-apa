@@ -146,20 +146,31 @@ def project_update_view(request, pk):
 @login_required(login_url="users:login")
 def project_delete_view(request, pk):
 
-    # 1. Get the project instance by its id
-    project = Project.objects.get(id=pk)
+    '''
+    1. Untuk menghapus sebuah proyek, use HARUS
+       - login.
+       * user dan proyek memiliki hub
+         OneToOne.'''
+    profile = request.user.profile
+
+    # 2. Ambil id dari proyek yang akan dihapus
+    project = profile.project_set.get(id=pk)
 
     '''
-    2. Jika ada request dgn method POST
+    3. Jika ada request dgn method POST
        gunakan method delete() untuk
        men-delete proyek berdasarkan 
        instan yang diterima lalu arahkan
-       kembali ke halaman proyek.
+       kembali ke laman proyek.
     '''
     if request.method == "POST":
         project.delete()
         return redirect('projects:projects')
 
+    # 4. Tempatkan semua data dari form ke dalam Context dictionary
     context = {'object':project}
-    
+
+    '''
+    5. Sertakan context dictionary pada template 
+        agar data dari form bisa ditampilan pada laman web.'''
     return render(request, 'projects/project_delete.html', context)
