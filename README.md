@@ -2061,3 +2061,17 @@ Oleh: I Nyoman Gurnitha
         Namun, nama owner/user TIDAK MUNCUL pada laman web.
 
 
+
+### 25. CRUD USER-BASED PROJECT
+-------------------------------
+
+
+#### 25.1 Menambahkan link Edite dan Delete proyek
+
+        Steps:
+
+        1. Tambahkan link
+        2. Test it out :)
+
+        modified:   README.md
+        modified:   users/templates/users/account.html
