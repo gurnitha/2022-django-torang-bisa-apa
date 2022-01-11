@@ -92,37 +92,55 @@ def project_create_view(request):
 @login_required(login_url="users:login")
 def project_update_view(request, pk):
 
-    # 1. Get the project instance by its id
+    '''
+    1. Agar bisa mengupdate proyek, user HARUS:
+       - login
+       - Kemudian dapatkan profile dari user tsb.
+       - User dan proyek mempunyai hub. OneToOne.'''
+    profile = request.user.profile
+
+    '''
+    2. Ambil id dari proyek yg dimiliki oleh user tsb
+       yg akan diupdate.
+    '''
     project = Project.objects.get(id=pk)
 
     ''' 
-    2. Instantiate the ProjectForm class
-       with parameter the instance of the project.
+    3. Load ProjectForm class yg berasal dari forms.py
+       dgn parameter dari proyek yg akan diupdate.
     '''
     form = ProjectForm(instance=project)
 
-    # 3. If there is POST request, process the form
+    # 4. Jika ada request dgn method POST, proses formnya.
     if request.method == "POST":
 
         # Tesing the form: fillin the form and submit it
         # print(request.POST) # tested :)
 
-        # 4. Instantiate the ProjectForm class
-        form = ProjectForm(request.POST, instance=project)
-        
-        # 5. Save input jika form input valid
+        ''' 
+        5. Instantiate the ProjectForm class dengan parameter
+           - request.POST, 
+           - request.FILES, dan
+           - instance=project.'''
+        form = ProjectForm(request.POST, request.FILES, instance=project)
+
+        # 6. Pastikan semua input pada form adalah valid.
         if form.is_valid():
-            form.save()
+            # 7. Lalu save data proyek ke dalam db.
+            project.save()
+            
+            # 8. Arahkan user ke laman proyek
             return redirect('projects:projects')
 
-    # 6. Context dictionary
+    # 9. Tempata semua data dari form ke dalam Context dictionary
     context = {
         'form':form,
     } 
 
-    # Template
-    return render(request, 'projects/project_form.html', context) # 7. Render context
-
+    '''
+    10. Sertakan context dictionary pada template 
+        agar data dari form bisa ditampilan pada laman web.'''
+    return render(request, 'projects/project_form.html', context)
 
 
 @login_required(login_url="users:login")

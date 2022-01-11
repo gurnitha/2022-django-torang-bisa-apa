@@ -2088,3 +2088,15 @@ Oleh: I Nyoman Gurnitha
 
         modified:   projects/forms.py
         modified:   projects/views.py
+
+
+#### 25.3 CRUD - UPDATE :  Menambahkan logic pada project_update_view untuk memungkinkan spesifik user mengupdate proyeknya
+
+        Steps:
+
+        1. Update project_update_view method
+        2. Test it out dan periksa hasilnya
+        
+        modified:   README.md
+        modified:   projects/views.py
+        new file:   static/images/PYTHON.png
