@@ -2035,3 +2035,21 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/profile_form.html
         modified:   users/views.py
+
+
+#### 24.12 Styling profile_form
+
+        Steps:
+
+        1. Modifikasi forms.py
+        2. Modifikasi profile_form.html
+        3. Modifikasi auth/register_login.html
+        4. Modifkasi view
+
+        modified:   README.md
+        new file:   static/images/profiles/saiber.w_V6WXYbB.JPG
+        new file:   static/images/profiles/virginia.JPG
+        modified:   users/forms.py
+        modified:   users/templates/users/auth/register_login.html
+        modified:   users/templates/users/profile_form.html
+        modified:   users/views.py

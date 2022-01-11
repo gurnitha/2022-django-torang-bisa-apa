@@ -47,7 +47,8 @@ def registerUser(request):
 
 			# Automatically Log in user after signing up
 			login(request, user)
-			return redirect('users:profiles')
+			# return redirect('users:profiles')
+			return redirect('users:account_edit')
 
 		# 3. If register faild
 		else:
@@ -206,7 +207,7 @@ def account_user_edit_view(request):
 
 		# Redirect to its account after saving
 		return redirect('users:account')
-		
+
 	context = {
 		'form':form
 	}

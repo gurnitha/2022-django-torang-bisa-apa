@@ -5,26 +5,41 @@
 {% block title %}Profile form{% endblock title %}
 
 	{% block content %}
+    <main class="formPage my-xl">
+        <div class="content-box">
+            <div class="formWrapper">
+                <a class="backButton" href="{% url 'users:account'%}"><i class="im im-angle-left"></i></a>
+                <br>
 
-	<div style="width:500px;  
-		margin: 0 auto; background: #ccc; 
-		padding: 50px; margin-top: 50px;">
+				<h1>Edit Account</h1>
 
-		<h1>Edit Account</h1>
+				<!----------- Form ----------->
+				<form 
+					action="{% url 'users:account_edit' %}" 
+					method="POST"
+					enctype="multipart/form-data"
+					class="form">
+					
+					{% csrf_token %}
 
-		<form 
-			action="{% url 'users:account_edit' %}" 
-			method="POST"
-			enctype="multipart/form-data">
-			
-			{% csrf_token %}
+					{% for field in form %}
+					<!-- Input:Text -->
+			        <div class="form__field">
+			            <label 
+			            	for="formInput#text">{{field.label}}:
+			            	{{field}}
+			            </label>
+			        </div>
+			        {% endfor %}
 
-			{{form.as_p}}
+					<input 
+						type="submit" 
+						name="" 
+						value="Submit">
+				</form>
+				<!--------- END Form --------->
 
-			<input 
-				type="submit" 
-				name="" 
-				value="Submit">
-		</form>
-	</div>
+			</div>
+		</div>
+	</main>
 	{% endblock content %}
