@@ -2235,3 +2235,16 @@ Oleh: I Nyoman Gurnitha
         new file:   users/templates/users/skill_delete.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 26.8 CRUD-FLASH MESSAGES: Menampilkan pesan sukses operasi Create, Update dan Delete skill
+
+        Steps:
+
+        1. Isi pesan sukses pada view method Create, Update dan Delete skill
+        2. Isi template laman users/skill_delete.html
+        3. Test it out :)
+
+        modified:   README.md
+        modified:   users/templates/users/skill_delete.html
+        modified:   users/views.py

@@ -251,18 +251,22 @@ def skill_create_view(request):
             7. Update data owner dari profile.
                Data itu mempunya hub OneToMany dgn skill.'''
             skill.owner = profile
+
             # 8. Lalu save data proyek ke dalam db.
             skill.save()
-            # 9. Arahkan user ke laman account
+
+            # 9 Tampilkan pesan sukses
+            messages.success(request, 'Skill was added successfully.')
+            # 10. Arahkan user ke laman account
             return redirect('users:account')  
 
-    # 10. Tempatkan semua data dari skill_form ke dalam Context dictionary
+    # 11. Tempatkan semua data dari skill_form ke dalam Context dictionary
     context = {
     	'form':form
     }
 
     '''
-    11. Sertakan context dictionary pada template 
+    12. Sertakan context dictionary pada template 
         agar data dari skill_form bisa ditampilan pada laman web.'''   
     return render(request, 'users/skill_form.html', context)
 
@@ -309,17 +313,20 @@ def skill_update_view(request, pk):
             # 7. Lalu save data skill ke dalam db.
             skill.save()
 
-			# 8. Arahkan user ke laman account
+            # 8. Tampilkan pesan sukses
+            messages.success(request, 'Skill was updated successfully.')
+
+			# 9. Arahkan user ke laman account
             return redirect('users:account')
 
-    # 9. Tempatkan semua data dari form ke dalam Context dictionary
+    # 10. Tempatkan semua data dari form ke dalam Context dictionary
     context = {
         'form':form,
         'page':page
     }
 
     '''
-    10. Sertakan context dictionary pada template 
+    11. Sertakan context dictionary pada template 
         agar data dari form bisa ditampilan pada laman web.'''
     return render(request, 'users/skill_form.html', context)
 
@@ -338,11 +345,13 @@ def skill_delete_view(request, pk):
     3. Jika ada request dgn method POST
        gunakan method delete() untuk
        men-delete skill berdasarkan 
-       instan yang diterima lalu arahkan
+       instan yang diterima, tampilkan pesan
+       sukses, lalu arahkan user
        kembali ke laman account.
     '''
     if request.method == 'POST':
         skill.delete()
+        messages.success(request, 'Skill was deleted successfully.')
         return redirect('users:account')
 
     # 4. Tempatkan semua data dari form ke dalam Context dictionary

@@ -7,20 +7,29 @@
 
 	{% block content %}
 
-	<div 
-		style="background:#E0E5D1; width: 800px; 
-		margin: 0 auto; margin-top: 100px; padding: 50px;">
-		<form action="" method="POST">
-			{% csrf_token %}
-			
-			<p style="color:red;">
-				Are you sure you want to delete "{{object}}"?</p>
-			
-			<a href="{% url 'users:account' %}">
-				Go back &larr;
-			</a>
-			<input type="submit" name="Confirm" />	
-		</form>
-	</div>
+	<main class="formPage my-xl">
+        <div class="content-box">
+            <div class="formWrapper">
+
+				<form action="" method="POST">
+					{% csrf_token %}
+					
+					<p style="color:red;">
+						Are you sure you want to delete "{{object}}"?
+					</p>
+					
+					<a 
+						class="btn btn--sub btn--lg my-md" 
+						href="{% url 'users:account' %}">
+						Go back &larr;
+					</a>
+					<input 
+						class="btn btn--sub btn--lg my-md" 
+						type="submit" 
+						value="Confirm"  />	
+				</form>
+			</div>
+		</div>
+	</main>
 
 	{% endblock content %}
