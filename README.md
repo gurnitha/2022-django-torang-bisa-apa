@@ -2075,3 +2075,16 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/account.html
+
+
+#### 25.2 CRUD - CREATE : Menambahkan logic pada project_create_view untuk memungkinkan spesifik user membuat proyek baru
+
+        Steps:
+
+        1. Update project_create_view method
+        2. Update projects/forms.py
+        3. Test it out
+        4. Periksa hasilnya :)
+
+        modified:   projects/forms.py
+        modified:   projects/views.py

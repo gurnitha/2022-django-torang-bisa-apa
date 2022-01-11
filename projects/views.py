@@ -40,31 +40,53 @@ def project_single_view(request, pk):
 
 @login_required(login_url="users:login")
 def project_create_view(request):
-    
-    # 1. Load ProjectForm class
+
+    '''
+    1. Agar bisa membuat proyek, user HARUS:
+       - Sign up dan login
+       - Kemudian dapatkan data profile dari user tsb.'''
+    profile = request.user.profile
+
+    # 2. Load ProjectForm class yg berasal dari forms.py.
     form = ProjectForm()
 
-    # Jika ada POST request, proses formnya
+    # 3. Jika ada request dgn method POST, proses formnya.
     if request.method == "POST":
 
         # # Tesing the form: isi form lalu submit
         # print(request.POST) # tested :)
 
-        # 2. Instantiate the ProjectForm class
-        form = ProjectForm(request.POST)
+        ''' 
+        4. Instantiate the ProjectForm class dengan parameter
+           - request.POST, dan 
+           - request.FILES
+           * request.FILES dimaksudkan agar bisa mengupload image.'''
+        form = ProjectForm(request.POST, request.FILES)
 
-        # 3. Save the input if form input valid
+        # 5. Pastikan semua input pada form adalah valid.
         if form.is_valid():
-            form.save()
+            '''
+            6. Ambil semua data dari form,
+               tapi jangan langsung disimpan ke dalam db.'''
+            project = form.save(commit=False)
+            '''
+            7. Update data owner dari proyek yg sdg dibuat.
+               Data itu mempunya hub OneToMany dgn profile.'''
+            project.owner = profile
+            # 8. Lalu save data proyek ke dalam db.
+            project.save()
+            
             return redirect('projects:projects')
 
-    # 4. Context dictionary
+    # 9. Tempata semua data dari form ke dalam Context dictionary
     context = {
         'form':form,
     } 
 
-    # Template
-    return render(request, 'projects/project_form.html', context) # 5. Render context
+    '''
+    10. Sertakan context dictionary pada template 
+        agar data dari form bisa ditampilan pada laman web.'''
+    return render(request, 'projects/project_form.html', context)
 
 
 @login_required(login_url="users:login")
