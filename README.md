@@ -2152,3 +2152,18 @@ Oleh: I Nyoman Gurnitha
         new file:   users/templates/users/skill_form.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 26.2 CRUD - CREATE Part 2: Membuat SkillForm model dan display pada laman skill_form
+
+        Steps:
+
+        1. Membuat SkillForm model
+        2. Import SkillForm model pada users/view
+        3. Load SkilForm pada skill_create_view
+        4. Render SkillForm pada laman skill_form
+        5. Periksa hasilnya :)
+
+        modified:   users/forms.py
+        modified:   users/templates/users/skill_form.html
+        modified:   users/views.py

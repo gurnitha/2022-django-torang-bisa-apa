@@ -10,7 +10,7 @@ from django.contrib import messages
 # Locals
 from . models import Profile, Skill
 from projects.models import Tag 
-from . forms import CustomUserCreationForm, ProfileForm
+from . forms import CustomUserCreationForm, ProfileForm, SkillForm
 
 # Create your views here.
 
@@ -220,8 +220,15 @@ def account_user_edit_view(request):
 
 # createSkill view
 def skill_create_view(request):
-    
-    context = {}
+
+    # 1. Load SkillForm model yang diimport dari users/forms.py.
+    form = SkillForm()
+	
+    # 2. Tempatkan semua fields dari form ke dalam Context dictionary
+    context = {
+    	'form':form
+    }
+
     
     return render(request, 'users/skill_form.html', context)
 
