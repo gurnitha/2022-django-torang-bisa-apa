@@ -6,20 +6,43 @@
 
 	{% block content %}
 	
-	<div style="background: #ccc; width: 800px; 
-		margin: 0 auto; padding: 50px; 
-		margin-top: 100px;">
+	<main class="formPage my-xl">
+        <div class="content-box">
+            <div class="formWrapper">
+                <a class="backButton" 
+                	href="#">
+                	<i class="im im-angle-left"></i></a>
+                <br>
 
-		<h1>Create Skill</h1>
+                <h1>Create Skill</h1>
 
-		<form action="" method="POST">
+                <!----------- Form ----------->
+                <form 
+                	class="form" 
+                	action="" 
+                	method="POST" 
+                	enctype="multipart/form-data">
+                	{% csrf_token %}
 
-			{% csrf_token %}
+                	{% for field in form %}
+                    <!-- Input:Text -->
+                    <div class="form__field">
+                        <label 
+                            for="formInput#text">{{field.label}}
+                        </label>
+                        {{field}}
+                    </div>
+                    {% endfor %}
 
-			{{form}}
+                    <input 
+                    	class="btn btn--sub btn--lg  my-md" 
+                    	type="submit" 
+                    	value="Submit" />
+                </form>
+                <!--------- END Form --------->
 
-			<input type="submit" name="" value="Submit">
-		</form>
-	</div>
+            </div>
+        </div>
+    </main>
 
 	{% endblock content %}

@@ -2167,3 +2167,14 @@ Oleh: I Nyoman Gurnitha
         modified:   users/forms.py
         modified:   users/templates/users/skill_form.html
         modified:   users/views.py
+
+
+#### 26.3 CRUD - CREATE Part 3: Styling skill_form
+
+        Steps:
+
+        1. Style SkillForm
+        2. Periksa hasilnya
+
+        modified:   README.md
+        modified:   users/templates/users/skill_form.html
