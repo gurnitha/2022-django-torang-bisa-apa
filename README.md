@@ -2111,3 +2111,21 @@ Oleh: I Nyoman Gurnitha
         
         modified:   README.md
         modified:   projects/views.py
+
+
+#### 25.5 CRUD - TESTING 
+
+        Steps:
+
+        1. Register user baru
+        2. Update account
+        3. Buat proyek
+        4. Lakukan CRUD pada proyek baru tsb.
+
+        NOTE:
+
+        CRUD berhasil :)
+
+        modified:   README.md
+        new file:   static/images/profiles/darling.PNG
+        new file:   static/images/samsung-tv-ua65t.PNG
