@@ -2047,9 +2047,17 @@ Oleh: I Nyoman Gurnitha
         4. Modifkasi view
 
         modified:   README.md
-        new file:   static/images/profiles/saiber.w_V6WXYbB.JPG
-        new file:   static/images/profiles/virginia.JPG
         modified:   users/forms.py
         modified:   users/templates/users/auth/register_login.html
         modified:   users/templates/users/profile_form.html
         modified:   users/views.py
+
+
+#### 24.13 House keeping: Merubah tata-letak codes profile_form
+
+        NOTE:
+
+        Proyek baru berhasil dibuat dari laman web.
+        Namun, nama owner/user TIDAK MUNCUL pada laman web.
+
+

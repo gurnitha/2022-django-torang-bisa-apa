@@ -5,10 +5,14 @@
 {% block title %}Profile form{% endblock title %}
 
 	{% block content %}
+
     <main class="formPage my-xl">
         <div class="content-box">
             <div class="formWrapper">
-                <a class="backButton" href="{% url 'users:account'%}"><i class="im im-angle-left"></i></a>
+            	
+                <a class="backButton" 
+                	href="{% url 'users:account'%}">
+                	<i class="im im-angle-left"></i></a>
                 <br>
 
 				<h1>Edit Account</h1>
@@ -42,4 +46,5 @@
 			</div>
 		</div>
 	</main>
+	
 	{% endblock content %}
