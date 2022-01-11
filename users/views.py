@@ -267,4 +267,56 @@ def skill_create_view(request):
     return render(request, 'users/skill_form.html', context)
 
 
+# updateSkill view
+def skill_update_view(request, pk):
+
+    '''
+    1. Agar bisa mengupdate skill, user HARUS:
+       - login
+       - Kemudian dapatkan profile dari user tsb.
+       - User dan skill mempunyai hub. OneToOne.'''
+    profile = request.user.profile
+
+    '''
+    2. Ambil id dari skill yg dimiliki oleh user tsb
+       yg akan diupdate.
+    '''
+    skill = profile.skill_set.get(id=pk)
+
+    ''' 
+    3. Load SkillForm model yg berasal dari forms.py
+       dgn parameter dari skill yg akan diupdate.
+    '''
+    form = SkillForm(instance=skill)
+
+    # 4. Jika ada request dgn method POST, proses formnya.
+    if request.method == "POST":
+
+        # Tesing the form: fillin the form and submit it
+        # print(request.POST) # tested :)
+
+        ''' 
+        5. Instantiate the SkillForm model dengan parameter
+           - request.POST, dan
+           - instance=skill.'''
+        form = SkillForm(request.POST, instance=skill)
+
+        # 6. Pastikan semua input pada form adalah valid.
+        if form.is_valid():
+            # 7. Lalu save data skill ke dalam db.
+            skill.save()
+
+			# 8. Arahkan user ke laman account
+            return redirect('users:account')
+
+    # 9. Tempatkan semua data dari form ke dalam Context dictionary
+    context = {
+        'form':form
+    }
+
+    '''
+    10. Sertakan context dictionary pada template 
+        agar data dari form bisa ditampilan pada laman web.'''
+    return render(request, 'users/skill_form.html', context)
+
 # ------------------------END CRUD SKILL----------------------

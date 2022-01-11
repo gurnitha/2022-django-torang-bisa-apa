@@ -2189,3 +2189,18 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/views.py
+
+
+#### 26.5 CRUD - UPDATE Part 1: Membuat method skill_update_view untuk mengupdate skill
+
+        Steps:
+
+        1. Buat logic pada skill_update_view
+        2. Buat path untuk update skill
+        3. Tautk laman skill_form dan account
+        4. Test it out
+        5. Periksa hasilnya :)
+
+        modified:   users/templates/users/account.html
+        modified:   users/urls.py
+        modified:   users/views.py
