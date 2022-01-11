@@ -26,4 +26,5 @@ urlpatterns = [
     # Skill
     path('create-skill/', views.skill_create_view, name='skill_create'),
     path('update-skill/<str:pk>/', views.skill_update_view, name='skill_update'),
+    path('delete-skill/<str:pk>/', views.skill_delete_view, name='skill_delete'),
 ]

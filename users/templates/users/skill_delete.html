@@ -1,0 +1,26 @@
+<!-- users/templates/users/delete_object.html -->
+{% extends 'base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock title %}
+
+	{% block content %}
+
+	<div 
+		style="background:#E0E5D1; width: 800px; 
+		margin: 0 auto; margin-top: 100px; padding: 50px;">
+		<form action="" method="POST">
+			{% csrf_token %}
+			
+			<p style="color:red;">
+				Are you sure you want to delete "{{object}}"?</p>
+			
+			<a href="{% url 'users:account' %}">
+				Go back &larr;
+			</a>
+			<input type="submit" name="Confirm" />	
+		</form>
+	</div>
+
+	{% endblock content %}

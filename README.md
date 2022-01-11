@@ -2217,3 +2217,21 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/skill_form.html
         modified:   users/views.py
+
+
+#### 26.7 CRUD-DELETE: Delete skill
+
+        Steps:
+
+        1. Buat file: users/templates/users/skill_delete.html
+        2. Isi template skill_delete.html
+        3. Buat view method skill_delete_view
+        4. Buat path
+        5. Tautkan skill_delete dgn account
+        6. Test it out
+        7. Periksa hasilnya :)
+
+        modified:   users/templates/users/account.html
+        new file:   users/templates/users/skill_delete.html
+        modified:   users/urls.py
+        modified:   users/views.py

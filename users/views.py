@@ -323,4 +323,34 @@ def skill_update_view(request, pk):
         agar data dari form bisa ditampilan pada laman web.'''
     return render(request, 'users/skill_form.html', context)
 
+
+# deleteSkill view
+def skill_delete_view(request, pk):
+
+    '''
+    1. Untuk menghapus sebuah proyek, use HARUS'''
+    profile = request.user.profile
+
+	# 2. Ambil id dari skill yang akan dihapus
+    skill = profile.skill_set.get(id=pk)
+
+    '''
+    3. Jika ada request dgn method POST
+       gunakan method delete() untuk
+       men-delete skill berdasarkan 
+       instan yang diterima lalu arahkan
+       kembali ke laman account.
+    '''
+    if request.method == 'POST':
+        skill.delete()
+        return redirect('users:account')
+
+    # 4. Tempatkan semua data dari form ke dalam Context dictionary
+    context = {'object':skill}
+
+    '''
+    5. Sertakan context dictionary pada template 
+        agar data dari form bisa ditampilan pada laman web.'''
+    return render(request, 'users/skill_delete.html', context)
+
 # ------------------------END CRUD SKILL----------------------
