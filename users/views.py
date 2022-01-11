@@ -270,6 +270,9 @@ def skill_create_view(request):
 # updateSkill view
 def skill_update_view(request, pk):
 
+    # Membuat variable page
+    page = 'update'
+
     '''
     1. Agar bisa mengupdate skill, user HARUS:
        - login
@@ -311,7 +314,8 @@ def skill_update_view(request, pk):
 
     # 9. Tempatkan semua data dari form ke dalam Context dictionary
     context = {
-        'form':form
+        'form':form,
+        'page':page
     }
 
     '''

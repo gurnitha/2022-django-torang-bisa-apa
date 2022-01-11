@@ -10,11 +10,22 @@
         <div class="content-box">
             <div class="formWrapper">
                 <a class="backButton" 
-                	href="#">
+                	href="{% url 'users:account' %}">
                 	<i class="im im-angle-left"></i></a>
                 <br>
 
-                <h1>Create Skill</h1>
+                <!-- Showing Update Skill -->
+                {% if page == 'update' %}
+
+                    <h3>Update Skill</h3>
+                
+                <!-- Showing Create Skill -->
+                {% else %}
+
+                    <h3>Create Skill</h3>
+                    
+                {% endif %}
+
 
                 <!----------- Form ----------->
                 <form 

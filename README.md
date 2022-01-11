@@ -2204,3 +2204,16 @@ Oleh: I Nyoman Gurnitha
         modified:   users/templates/users/account.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+#### 26.6 CRUD - UPDATE Part 2: Sembunyikan/perlihatkan form title 'Create Skill' dan 'Update Skill'
+
+        Steps:
+
+        1. Buat variabel pada skill_update_view 
+        2. Buat kondisional pada skill form
+        3. Test it out :)
+
+        modified:   README.md
+        modified:   users/templates/users/skill_form.html
+        modified:   users/views.py
