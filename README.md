@@ -2360,3 +2360,32 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/views.py
+
+
+#### 26.4. SEARCH - Membuat nilai pencarian tetap berada pada kotak pencarian
+
+
+        NOTE:
+
+        Pada langkah ke-2, setiap kali menulis sesuatu pada kotak pencarian,
+        kemudian menekan tombol Search, hurup atau kata yang ditulis pada
+        kotak pencarian terhapus.
+
+        Sekarang kita akan membuat nilai pencarian akan tetap berada
+        pada kotak pencarian.
+
+        Langkah 3. Membuat nilai pencarian tetap berada pada kotak search
+
+        1. Buka file users/views.py, cari bagian def profile_view(request):
+           - tambahkan code ini: 'search_query':search_query ke dalam
+             context dictionary, seperti terlihat pada gambar 27/12.
+        2. Buka users/profiles.html, pada bagian form, tambahkan
+           atribut value dan tambahkan varibale ini: 'search_query'
+           yang terdapat di dalam context.
+           Lihat gambar 27/13
+        3. Lakukan pengujian dan periksa hasilnya: kata pada kotak pencarian
+           tetap berada pada kotak pencarian setelah tombol Search diklik.
+
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
+        modified:   users/views.py

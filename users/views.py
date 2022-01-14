@@ -156,7 +156,8 @@ def profile_view(request):
 	
 	context = {
 		'profiles':profiles,
-		'skills': skills
+		'skills': skills,
+		'search_query':search_query
 	}
 
 	return render(request, 'users/profiles.html', context)
