@@ -2389,3 +2389,41 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/profiles.html
         modified:   users/views.py
+
+
+#### 27.5. SEARCH - Menggunakan Q look up untuk search
+
+        NOTE:
+
+        Pada langkah ke-3, terdapat sedikit masalah dalam melakukan pencarian dengan menggunakan name_icontains.
+
+        Fungsi pencarian tidak dapat menemukan yang kita cari.
+        Misal, bila huruf yang sama tidak terdapat pada nama dan
+        short_intro.
+
+        Jadi kita tidak dapat melakukan pencarian berganda, yakni: berdasarkan name dan short_intro
+
+        Contoh: 
+
+        Ref: Profile model
+
+        name: ingafter63
+        short_intro: Backend developer EX DB
+
+        Pada name dan short_intro tidak memiliki karakter
+        yang sama, misal (db). Bila pencarian dilakukan
+        dengan mengketik db pada kotak pencarian,
+        maka hasilnya akan nihil.
+
+        Solusi dari masalah itu adalah menggunakan django module bernama Q look up search.
+
+        Langkah 4. Pencarian menggunakan Q look up
+
+        1. Buka file users/views.py, dan lakukan:
+           - impor module Q
+           - cari bagian def profile_view(request):, kemudian lakukan yang seperti terlihat pada gambar 27/15.
+
+        2. Lakukan pengujian, hasilnya terlihat seperti pada gambar 27/16.
+
+        modified:   README.md
+        modified:   users/views.py

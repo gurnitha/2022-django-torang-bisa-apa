@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 from django.contrib import messages
-# from django.contrib.auth.forms import UserCreationForm
+from django.db.models import Q  
 
 # Locals
 from . models import Profile, Skill
@@ -147,9 +147,15 @@ def profile_view(request):
 
 	# profiles = Profile.objects.all()
 
-	# Step 4 Search: search by name
+	# # Step 4 Search: search by name
+	# profiles = Profile.objects.filter(
+	# 	name__icontains=search_query
+	# )
+
+	# Step 5 Search: using Q look up
 	profiles = Profile.objects.filter(
-		name__icontains=search_query
+		Q(name__icontains=search_query) |
+		Q(short_intro__icontains=search_query),
 	)
 
 	skills = Skill.objects.all()
