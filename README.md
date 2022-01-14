@@ -2248,3 +2248,44 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/skill_delete.html
         modified:   users/views.py
+
+
+
+### 27. SEARCH
+--------------
+
+
+#### 27.1. SEARCH - Add url, Skenario dan persiapan
+
+        Steps:
+
+        1. Add url pada action dari search form
+
+        NOTE Skenario dan persiapan:
+
+        Kita akan melakukan Search atau pencarian informasi
+        pada aplikasi kita dengan dua cara:
+
+        1. Pada laman profiles; dan
+        2. Pada laman projects.
+
+        Ad 1. Laman Profiles.
+
+        Pada laman Profilis atau home page, kita akan 
+        lakukan pencarian terhadap developers atau siapapun
+        yang tercatat dalam aplikasi kita melalui atribut
+        mereka seperti:
+
+        - nama, deskripsi dan skill mereka.
+
+        Ad 2. Laman Projects
+
+        Pada laman projects kita akan lakukan pencarian
+        melalui atribut mereka, seperti:
+
+        - judul proyek, deskripsi, tags yang berkaitan
+          dengan proyek dan mungkin juga nama
+          pengembangnya.
+
+        modified:   README.md
+        modified:   users/templates/users/profiles.html

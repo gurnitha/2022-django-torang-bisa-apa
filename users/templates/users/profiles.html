@@ -10,20 +10,34 @@
         <!-- Header -->
         <section class="hero-section text-center">
             <div class="container container--narrow">
+
+                <!-- Header text -->
                 <div class="hero-section__box">
                     <h2>CONNECT WITH <span>CREATIVES INDONESIA</span></h2>
                     <h2>DARI SELURUH PENJURU DUNIA</h2>
                 </div>
+                <!-- End Header text -->
+
+                <!-- Search form -->
                 <div class="hero-section__search">
-                    <form class="form" action="#" method="get">
+                    <form 
+                        class="form" 
+                        action="{% url 'users:profiles' %}" 
+                        method="get">
                         <div class="form__field">
                             <label for="formInput#search">Search Developers </label>
-                            <input class="input input--text" id="formInput#search" type="text" name="text"
+                            <input 
+                                class="input input--text" 
+                                id="formInput#search" 
+                                type="text" 
+                                name="text"
                                 placeholder="Search by developer name" />
                         </div>
                         <input class="btn btn--sub btn--lg" type="submit" value="Search" />
                     </form>
                 </div>
+                <!-- End Search form -->
+
             </div>
         </section>
         <!-- END Header -->
