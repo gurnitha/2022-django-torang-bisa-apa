@@ -2251,8 +2251,8 @@ Oleh: I Nyoman Gurnitha
 
 
 
-### 27. SEARCH
---------------
+### 27. SEARCH UNTUK PROFILE: NAMA, SHORT_INTRO DAN SKILL
+---------------------------------------------------------
 
 
 #### 27.1. SEARCH - Add url, Skenario dan persiapan
@@ -2470,3 +2470,8 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         new file:   users/utils.py
         modified:   users/views.py
+
+
+#### 27.8. House keeping: modifikasi README.md file
+
+        modified:   README.md
