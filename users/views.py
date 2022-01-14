@@ -152,13 +152,22 @@ def profile_view(request):
 	# 	name__icontains=search_query
 	# )
 
-	# Step 5 Search: using Q look up
-	profiles = Profile.objects.filter(
+	# # Step 5 Search: using Q look up
+	# profiles = Profile.objects.filter(
+	# 	Q(name__icontains=search_query) |
+	# 	Q(short_intro__icontains=search_query),
+	# )
+
+	# Step 6 Search: using Q look up, iexact dan ditinct
+	skills = Skill.objects.filter(name__icontains=search_query)
+
+	profiles = Profile.objects.distinct().filter(
 		Q(name__icontains=search_query) |
-		Q(short_intro__icontains=search_query),
+		Q(short_intro__icontains=search_query)|
+		Q(skill__in=skills)
 	)
 
-	skills = Skill.objects.all()
+	# skills = Skill.objects.all()
 	
 	context = {
 		'profiles':profiles,

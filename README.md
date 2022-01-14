@@ -2427,3 +2427,24 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/views.py
+
+
+#### 27.6. SEARCH - Menggunakan Q, distinct dan icontains untuk melakukan  multiple search, termasuk pencarian skill dalam profile
+
+        NOTE:
+
+        Melakukan pencarian pada langkah ke-4, kita tidak dapat melakukan pencarian skill yang terdapat pada profile.
+
+        Pada langkah 5, kita akan melakukan multiple search sehingga memungkinakan kita melakukan pencarian baik berdasarkan nama, short_intro dan skill.
+
+        Langkah 5. Membuat multiple search
+
+        1. Buka file users/views.py, profile_view(request) dan lakukan:
+           - Pastikan model Skill sudah diimport
+           - Blok semua langkah ke-5
+           - Buat multiple search.
+           Lebih jelasnya, lihat gambar 27/18.
+        2. Lakukan pengujian, hasilnya terlihat seperti pada gambar 27/19.
+
+        modified:   README.md
+        modified:   users/views.py
