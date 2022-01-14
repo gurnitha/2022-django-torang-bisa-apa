@@ -2322,3 +2322,41 @@ Oleh: I Nyoman Gurnitha
         modified:   README.md
         modified:   users/templates/users/profiles.html
         modified:   users/views.py
+
+
+#### 27.3. SEARCH - Pencarian melalui nama
+
+        Langkah 3. Tampilkan hasil pencarian pada home page
+
+        Note:
+
+        Pada langkah 2, kita telah berhasil menampilkan
+        informasi yang dicari pada terminal.
+        Pada langkah ini, kita akan menampilkan hasil
+        pencarian pada halaman depan atau home page.
+
+        Untuk itu, kita akan melakukan:
+
+        1. Buka file users/views.py, cari bagian def profile_view(request):
+           - block dengan comment Step 3
+           - ganti profiles = Profile.objects.all()
+             dengan code yang ada pada Step 4
+           - lihat gambar 27/09
+
+        2. Pengujian:
+           - Jalankan server anda
+           - Buka browser
+           - Ketik sesuatu, misal: ingafter63
+           - Lihat gambar 27/10
+
+           Note:
+
+           Jika pada search anda ketik 'ing' atau 'i', maka akan
+           ditampilkan hasil yang berbeda, coba lakukan 
+           sendiri.
+
+           Selanjutnya, coba dengan huruf atau kata yang lain
+           seperti yang anda sukai.
+
+        modified:   README.md
+        modified:   users/views.py

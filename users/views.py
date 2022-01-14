@@ -142,10 +142,16 @@ def profile_view(request):
 	if request.GET.get('search_query'):
 		search_query = request.GET.get('search_query')
 
-	# Step 3 Search: Testing search resutl
-	print('SEARCH:', search_query)
+	# # Step 3 Search: Testing search resutl
+	# print('SEARCH:', search_query)
 
-	profiles = Profile.objects.all()
+	# profiles = Profile.objects.all()
+
+	# Step 4 Search: search by name
+	profiles = Profile.objects.filter(
+		name__icontains=search_query
+	)
+
 	skills = Skill.objects.all()
 	
 	context = {
