@@ -2289,3 +2289,36 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/templates/users/profiles.html
+
+        Langkah 1. Testing pencarian
+
+        1. Buka users/profiles.html
+        2. Lihat bagian form yang dimulai dengan <form class="form" action="#" 
+        3. Ganti tanda pagar dengan {% url 'users:profiles' %}
+           url itu dimaksudkan agar hasil pencarian bisa ditampilkan pada laman profiles.
+        4. Buka browser anda dengan url ini http://localhost:8000/, lalu refresh
+        5. Pada laman profil di bagian search, ketik sesuatu, misal anda ketik 'Torang Bisa Apa'
+           lalu klik tanda SEARCH, maka hasilnya akan seperti ini:
+           http://localhost:8000/?text=Torang+Bisa+Apa# 
+        6. Periksa hasilnya pada url dari browser anda.
+        7. Jika anda melakukan dengan benar, maka akan terlihat seperti pada gambar 27/04.
+           http://localhost:8000/?text=Torang+Bisa+Apa#, terutama bagian dari text=Torang+Bisa+Apa#
+
+
+#### 27.2. SEARCH - Testing the search result to terminal
+
+        Langkah 2. Tampilkan hasil pencarian pada terminal
+
+        1. Buka users/profiles.html, pada bagian form, 
+           ubah nilai atribute name="text" menjadi name="search_query"
+           , lihat gambar 27/05
+        2. Buka file users/views.py, cari bagian def profile_view(request):
+           lalu tulis code seperti pada gambar 27/06
+        3. Lakukan:
+           - Jalankan server dan buka aplikasi pada http://localhost:8000/
+           - Pada search, ketik sesuatu, misal 'Torang Bisa Apa'
+           - Lihat hasilnya pada terminal seperti terlihat pada gambar 27/07
+
+        modified:   README.md
+        modified:   users/templates/users/profiles.html
+        modified:   users/views.py
