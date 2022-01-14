@@ -2448,3 +2448,25 @@ Oleh: I Nyoman Gurnitha
 
         modified:   README.md
         modified:   users/views.py
+
+
+#### 27.7. SEARCH - Codes separattions: Membuat file utility search
+
+        NOTE:
+
+        Pada langkah 5, fungsi pencarian untuk nama, short_intro dan skill pada laman home page telah berhasil.
+
+        Selanjutnya kita akan membuat file utility dan memindahkan code pencarian ke dalam file itu, kemudian kita impor file itu untuk digunakan pada profile_view.
+
+        Hal itu kita lakukan agar codes pada profile_view tidak terlalu gemuk.
+
+        Langkah 6. Membuat multiple search
+
+        1. Buat file baru: users/utils.py
+        2. Pada utils.py buat fungsi searchProfile dan pindahkan code pencarian dari profile_view ke utils.py sebagai bagian dari fungsi searchProfile.
+        3. Import dan load fungsi searchProfile pada profile_view
+        4. Jalankan server dan lakukan pengujian. Saya telah melakukan pengujian dan hasilnya sama seperti pada langkah 5.
+
+        modified:   README.md
+        new file:   users/utils.py
+        modified:   users/views.py
