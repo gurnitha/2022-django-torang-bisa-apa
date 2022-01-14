@@ -11,19 +11,40 @@
         	<!-- Header -->
             <section class="hero-section text-center">
                 <div class="container container--narrow">
+
+                    <!-- Header text -->
                     <div class="hero-section__box">
-                        <h2>Search for <span>Projects</span></h2>
+                        <h2>Pencarian <span>Proyek</span></h2>
                     </div>
+                    <!-- End Header text -->
+
+                    <!-- Search box -->
                     <div class="hero-section__search">
-                        <form class="form" action="#" method="get">
+                        <form 
+                            class="form" 
+                            action="{% url 'projects:projects' %}" 
+                            method="get">
                             <div class="form__field">
-                                <label for="formInput#search">Search By Projects </label>
-                                <input class="input input--text" id="formInput#search" type="text" name="text"
-                                    placeholder="Search by Project Title" />
+                                <label 
+                                    for="formInput#search">
+                                    Search By Projects 
+                                </label>
+                                <input 
+                                    class="input input--text" 
+                                    id="formInput#search" 
+                                    type="text" 
+                                    name="search_query"
+                                    value="{{search_query}}" 
+                                    placeholder="Search by project title, 
+                                                owner, tags, etc ..." />
                             </div>
-                            <input class="btn btn--sub btn--lg" type="submit" value="Search" />
+                            <input 
+                                class="btn btn--sub btn--lg" 
+                                type="submit" value="Search" />
                         </form>
                     </div>
+                    <!-- End Search box -->
+
                 </div>
             </section>
             <!-- END Header -->

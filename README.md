@@ -2475,3 +2475,30 @@ Oleh: I Nyoman Gurnitha
 #### 27.8. House keeping: modifikasi README.md file
 
         modified:   README.md
+
+
+
+### 28. SEARCH UNTUK PROYEK: TITLE, DESCRIPTION, OWNER DAN TAGS
+---------------------------------------------------------------
+
+#### 28.1 Membuat fungsi searchProjects
+
+        NOTE:
+
+        Kita telah berhasil membuat fungsi pencarian profiles.
+        Sekarang kita akan membuat fungsi pencarian proyek.
+
+        Langkah yang akan kita lakukan sama seperti pada langkah membuat fungsi pencarian profile. Namun kali ini lebih singkat karena semua langkah-langkah dasarnya telah kita bahas bersama.
+
+        Yang akan kita lakukan sekarang adalah:
+
+        1. Membuat file baru: projects/utils.py
+        2. Membuat fungsi searchProjects dan logicnya.
+        3. Mengimpor dan menggunakan fungsi searchProjects pada projects_view.
+        4. Menambahkan atribut pada form pencarian.
+        5. Menjalankan server dan melakukan pengujian. Lakukanlah pengujian sendiri sebagai bagian dari pembelajaran. Saya telah melakukan pengujian dan fungsi pencarian proyek berkerja dengan baik.
+
+        modified:   README.md
+        modified:   projects/templates/projects/projects.html
+        new file:   projects/utils.py
+        modified:   projects/views.py
