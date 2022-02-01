@@ -3,6 +3,7 @@
 # Django modules
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 
 # locals
 from .models import Project
@@ -16,6 +17,12 @@ def projects_view(request):
 
     # Step 5 Search: use the searchProfiles method
     projects, search_query = searchProjects(request)
+
+    page = 1
+    results = 3
+    paginator = Paginator(projects, results)
+
+    projects = paginator.page(page)
 
     # projects = Project.objects.all()
     page_title = 'Projects'

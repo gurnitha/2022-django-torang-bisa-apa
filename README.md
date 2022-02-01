@@ -2502,3 +2502,58 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/templates/projects/projects.html
         new file:   projects/utils.py
         modified:   projects/views.py
+
+
+
+### 29. PAGINATION
+------------------
+
+
+#### 29.1 PAGINATION PART 1 - Menampilkan hanya 3 proyek pada halaman pertama
+
+
+        NOTE: Tentang paginasi
+
+        Anda pasti pernah membuka website, misalnya website berita KOMPAS. Website itu, biasanya berisi banyak informasi yg tersimpan pada database dari waktu ke waktu. 
+
+        Informasi itu ditampilkan pada halaman website berdasarkan waktu inforamsi itu disimpan.
+
+        Informasi terbaru, sesusungguh informasi itu disimpan paling terakhir, akan ditampilkan paling pertama secara otomatis. 
+
+        Cara kerjanya saya sebut LIFO: Last In, First Out. Dengan cara ini, maka website tersebut akan terlihat selalu menampilkan informasi terkini. Sementara informasi yang lama masih tetap ada dan ditayangkan, namun seringkali informasi itu tidak terlihat pada halaman utama karena simtem membatasi inforamasi yang ditampilkan pada sebuah halaman agar kecepatan akses ke informasi tetap terjaga. 
+
+        Misalnya pada halaman ke-1 hanya ditampilkan 10 berita, pada halaman ke-2 ditampilkan 10 berita lagi dan begitu seterusnya.
+
+        Untuk beralih dari halaman ke-1 ke halaman ke-2 dan halaman-halaman berikutnya digunakan navigasi paginasi. Paginasi itu biasanya terletak pada bagian bawah dari halaman website.
+
+        Pada laman aplikasi yang kita sedang bangun juga berisi navigasi paginasi. Namun paginasi itu belum berfungsi.
+
+        Untuk itu, pada latihan kali ini kita akan belajar bagaimana cara memfungsikan paginasi itu selangkah demi selangkah.
+
+        Kliklah menu projects, dan lihatlah bagian bawah laman itu. Di sini Anda akan menemukan napigasi seperti terlihat pada gambar 20/01.
+
+
+        Langkah-langkah untuk memfungsikan paginasi
+
+
+        1. Saya akan login sebagai admin. Setelah login saya akan mengklik menu Add Project untuk membuat 12 proyek baru.
+
+        2. Refresh browser setelah proyek ke-12 di-submit. Anda akan melihat 'Proyek baru 12' terlihat paling di depan, padahal proyek itu yang terakhir saya buat.
+
+        Pertanyaannya adalah, bagaimana cara mengturnya sehingga bisa seperti itu?
+
+        Jawabannya sangat mudah. Periksalah Project model (class Project), di dalamnya terdapat field dengan nama 'created'. Dengan sedikit trik, lihat gambar 29/04, dengan membuat class Meta dan perintah ordering
+        (ordering = ['-created']), maka proyek terakhir yang dibuat akan tampil paling depan. Trik itu memberi tanda - (baca minus) pada kata 'created'. Arti tanda minus itu adalah, tampilkanlah data proyek yang tersimpan di dalam database dengan urutan tampil LIFO: Last In, First Out atau yang terakhir yang ditampilkan sebagai yang pertama.
+
+        3. Memulai paginasi - Membatasi hanya 3 proyek pada satu halaman
+
+        Saat ini, di dalam database terdapat 18 proyek. Bila Anda perhatikan gambar 29/05, terlihat semua proyek yang tersimpan di dalam database ditampilkan dalam satu halaman. Bagaimana kalau ada 1.000 proyek? Dengan cara seperti ini, maka akses ke aplikasi kita akan menjadi sangat lambat karena user harus menunggu sampai semua data ditampilkan pada halaman pertama.
+
+        Untuk itulah paginasi diperlukan untuk mengatur pembatasan jumlah proyek yang akan ditampilkan pada setiap halaman. Kali ini kita akan mencoba membatasi hanya 3 proyek ditampilkan pada setiap halaman. Caranya lihat pada gambar 29/06. 
+
+        modified:   README.md
+        modified:   projects/models.py
+        modified:   projects/views.py
+
+
+
