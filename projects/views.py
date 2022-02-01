@@ -18,7 +18,8 @@ def projects_view(request):
     # Step 5 Search: use the searchProfiles method
     projects, search_query = searchProjects(request)
 
-    page = 1
+    # page = 1
+    page = 2
     results = 3
     paginator = Paginator(projects, results)
 

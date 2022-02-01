@@ -2556,4 +2556,24 @@ Oleh: I Nyoman Gurnitha
         modified:   projects/views.py
 
 
+#### 29.2 PAGINATION PART 2 - Menampilkan 3 buah proyek berikutnya
+
+        Steps:
+
+        1. Ganti page = 1 menjadi page = 2
+        2. Refresh browser
+        3. Tiga buah proyek berikutnya, yakni Proyek baru 9, 8 dan 7 ditampilkan.
+
+        Mudah bukan?
+
+        Tapi cara ini tidak efektif karena masih dilakukan secara manual, yakni
+        mengganti page=1 menjadi page=2.
+
+        Berikut kita akan coba cara yang lebih efektif. 
+
+        modified:   README.md
+        modified:   projects/views.py
+
+        DONE: :)
+
 
